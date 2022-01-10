@@ -1386,3 +1386,10 @@ def number(bus_stops):
 # Count the divisors of a number
 def divisors(n):
     return len([i + 1 for i in range(n) if n % (i + 1) == 0])
+
+# 194
+# Count the Digit
+def nb_dig(n, d):
+    k = [i ** 2 for i in range(n + 1)]
+
+    return sum(str(num).count(str(d)) for num in k if str(d) in str(num))
