@@ -1133,3 +1133,10 @@ function setAlarm(employed, vacation) {
 function feast(beast, dish) {
   return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
 }
+
+
+// 116
+// Double Char
+function doubleChar(str) {
+  return str.split('').map(char => char.repeat(2)).join('')
+}
