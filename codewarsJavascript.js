@@ -1099,3 +1099,10 @@ function doubleInteger(i) {
 function greet(name, owner) {
   return name === owner ? 'Hello boss' : 'Hello guest'
 }
+
+
+// 112
+// Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.split('').filter(el => el !== '!').join('')
+}
