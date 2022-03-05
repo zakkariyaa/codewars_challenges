@@ -1119,3 +1119,10 @@ function rentalCarCost(d) {
     return d * 40
   }
 }
+
+
+// 114
+// L1: Set Alarm
+function setAlarm(employed, vacation) {
+  return employed && !vacation
+}
