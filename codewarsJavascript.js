@@ -1051,3 +1051,15 @@ function countBy(x, n) {
   }
   return z;
 }
+
+
+// 106
+// If you can't sleep, just count sheep!!
+var countSheep = function (num) {
+  const sheep = []
+  for (let i = 1; i <= num; i++) {
+    sheep.push(`${i} sheep...`)
+  }
+
+  return sheep.join('')
+}
