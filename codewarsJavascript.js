@@ -1063,3 +1063,11 @@ var countSheep = function (num) {
 
   return sheep.join('')
 }
+
+
+// 107
+// Sum Mixed Array
+function sumMix(x) {
+  const nums = x.map(num => Number(num))
+  return nums.reduce((a, b) => a + b)
+}
