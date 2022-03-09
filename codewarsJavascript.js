@@ -1071,3 +1071,10 @@ function sumMix(x) {
   const nums = x.map(num => Number(num))
   return nums.reduce((a, b) => a + b)
 }
+
+
+// 108
+// Can we divide it?
+function isDivideBy(number, a, b) {
+  return number % a === 0 && number % b === 0
+}
