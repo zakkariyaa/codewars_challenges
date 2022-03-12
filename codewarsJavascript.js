@@ -1092,3 +1092,10 @@ const areaOrPerimeter = function (l, w) {
 function doubleInteger(i) {
   return i + i;
 }
+
+
+// 111
+// Grasshopper - Personalized Message
+function greet(name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest'
+}
