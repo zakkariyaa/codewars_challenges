@@ -1019,3 +1019,17 @@ var min = function (list) {
 var max = function (list) {
   return Math.max(...list)
 }
+
+
+// 103
+// Total amount of points
+function points(games) {
+  let points = 0
+  for (let i = 0; i < games.length; i++) {
+    const game = games[i].split(':')
+    game[0] > game[1] ? points += 3 : game[0] === game[1] ? points += 1 : points += 0
+
+  }
+
+  return points
+}
