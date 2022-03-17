@@ -996,3 +996,15 @@ function lovefunc(flower1, flower2) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return fuelLeft * mpg >= distanceToPump ? true : false
 };
+
+
+// 101
+// Sum without highest and lowest number
+function sumArray(array) {
+  if (Boolean(array) === true && array.length > 1) {
+    const sorted = array.sort((a, b) => a - b).slice(1, -1)
+    return sorted.reduce((a, b) => a + b, 0)
+  } else {
+    return 0
+  }
+}
