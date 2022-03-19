@@ -119,3 +119,48 @@ function filter_list(l) {
       return (Number.isInteger(el))
     })
 }
+
+
+// 11
+// Responsible Drinking
+function hydrate(s) {
+  const drinks = s.split(' ');
+  const drinkAmount = drinks.filter(el => {
+    return !isNaN(el);
+  })
+  
+  const water = drinkAmount.reduce((prev, current) => {
+    return Number(prev) + Number(current);
+  })
+  
+  if (water > 1) {
+    return `${water} glasses of water`
+  } else if (water.length === 1) {
+    return `${water} glass of water`
+  }
+}
+
+
+// 12
+// Battle of the characters (Easy)
+function battle(x, y) {
+  const alpha = String.fromCharCode(...Array(123).keys()).slice(97).toUpperCase().split('');
+  let xCount = {name: x, power: 0};
+  let yCount = {name: y, power: 0};
+  
+  for (let char of x) {
+    xCount.power += alpha.indexOf(char) + 1
+  }
+  
+  for (let char of y) {
+    yCount.power += alpha.indexOf(char) + 1
+  }
+  
+  if (xCount.power > yCount.power) {
+    return xCount.name
+  } else if (xCount.power === yCount.power) {
+    return 'Tie!'
+  } else {
+    return yCount.name;
+  }
+}

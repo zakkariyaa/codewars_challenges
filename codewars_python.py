@@ -133,3 +133,29 @@ def high(x):
 # Where my anagrams at?
 def anagrams(word, words):
 	return [w for w in words if ''.join(sorted(w)) == ''.join(sorted(word))]
+
+
+# 17
+# Find The Parity Outlier
+def find_outlier(integers):
+    odds = [num for num in integers if num % 2 != 0]
+    if len(odds) > 1:
+        even = [i for i in integers if i % 2 == 0]
+        return even[0]
+    else:
+        return odds[0]
+
+
+# 18
+# Your order, please
+def order(sentence):
+  words = sentence.split()
+  seperated = {char: word for word in words for char in word if char.isnumeric()}
+
+  word_positions = list(seperated.keys())
+  word_positions.sort()
+
+  fixed_words = ' '.join([seperated[position] for position in word_positions])
+
+  return fixed_words
+
