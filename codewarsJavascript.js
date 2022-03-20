@@ -164,3 +164,23 @@ function battle(x, y) {
     return yCount.name;
   }
 }
+
+
+// 13
+// Dot Calculator
+function dotCalculator (equation) {
+  const parts = equation.split(' ');
+  const operator = parts[1];
+  if (operator === '+') {
+    return parts[0] + parts[2];
+  } else if (operator === '-') {
+    const diff = parts[0].length - parts[2].length
+    return '.'.repeat(diff)
+  } else if (operator === '*') {
+    const diff = parts[0].length * parts[2].length
+    return '.'.repeat(diff)
+  } else if (operator === '//') {
+    const diff = Math.trunc(parts[0].length / parts[2].length)
+    return '.'.repeat(diff)
+  }
+}

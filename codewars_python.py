@@ -159,3 +159,44 @@ def order(sentence):
 
   return fixed_words
 
+
+# 19
+# Counting Duplicates
+def duplicate_count(text):
+    letters = {}
+
+    for letter in text.lower():
+        if letters.get(letter) is not None:
+            letters[letter] += 1
+        else:
+            letters[letter] = 1
+
+
+    duplicates = [key for key, value in letters.items() if letters[key] > 1]
+
+    return len(duplicates)
+
+
+
+# 20
+# Two to One
+def longest(a1, a2):
+    strings = list(set(a1 + a2))
+    strings.sort()
+
+    return ''.join(strings)
+
+
+
+# 21
+# Get the Middle Character
+def get_middle(s):
+    word_length = len(s)
+
+    if word_length % 2 == 0:
+        middle = word_length // 2
+        return s[middle -1 ] + s[middle]
+    else:
+        middle = word_length // 2
+        return s[middle]
+
