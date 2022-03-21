@@ -200,3 +200,27 @@ def get_middle(s):
         middle = word_length // 2
         return s[middle]
 
+
+# 22
+# Array.diff
+def array_diff(a, b):
+    return [item for item in a if item not in b]
+
+
+
+# 23
+# Is a number prime?
+from math import sqrt
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    
+    i = 2
+    
+    while i <= sqrt(num):    
+        if num % i == 0:
+            return False
+        i += 1
+        
+    return True 

@@ -184,3 +184,62 @@ function dotCalculator (equation) {
     return '.'.repeat(diff)
   }
 }
+
+
+// 14
+// CamelCase Method
+String.prototype.camelCase=function(value){
+  const words = this.split(' ').filter(el => el !== '');
+  const title = words.map(el => {
+    const temp = el[0].toUpperCase() + el.slice(1);
+    return temp;
+  })
+  return title.join('');
+}
+
+
+// 15
+// Find the missing letter
+function findMissingLetter(array) {
+  const newArr = array.map(el => el.toLowerCase())
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  const startCheck = alphabet.indexOf(newArr[0]);
+  const endCheck = alphabet.indexOf(newArr[newArr.length-1]);
+  const checkArea = alphabet.slice(startCheck, endCheck + 1);
+  
+  const missingLetter = checkArea.filter(el => {
+    if (!newArr.includes(el)) {
+      return el;
+    }
+  })
+  
+  if (array[0] === newArr[0]) {
+    return missingLetter.join('')
+  } else {
+    return missingLetter.join('').toUpperCase()
+  }
+}
+
+
+// 16
+// Are the numbers in order?
+function inAscOrder(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i + 1]) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+
+// 17
+// Filter Long Words
+function filterLongWords(sentence, n) {
+  const longWords = sentence.split(' ').filter(el => {
+    return el.length > n;
+  })
+  
+  return longWords;
+}
