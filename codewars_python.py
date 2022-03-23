@@ -245,3 +245,30 @@ from string import ascii_lowercase
 def high(x):
     c = [sum([ascii_lowercase.index(char) + 1 for char in word]) for word in x.split()]
     return x.split()[c.index(max(c))]
+
+
+
+# 26
+# Take a Ten Minute Walk
+def is_valid_walk(walk):
+    return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
+
+
+
+# 27
+# Unique In Order
+def unique_in_order(iterable):
+    words = []
+    unique = []
+
+    for char in iterable:
+        words.append(char) if bool(unique) and char == unique[-1] else unique.append(char)
+
+    return unique
+
+
+
+# 28
+# Bit Counting
+def count_bits(n):
+    return str(bin(n)[2:]).count('1')
