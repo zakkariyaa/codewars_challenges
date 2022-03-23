@@ -224,3 +224,24 @@ def is_prime(num):
         i += 1
         
     return True 
+
+
+# 24
+# Split Strings
+def solution(s):
+    new_str = s if len(s) % 2 == 0 else s + '_'
+    splitted_letters = []
+    
+    for i in range(0, len(new_str), 2):
+        splitted_letters.append(new_str[i] + new_str[i + 1])
+        
+    return splitted_letters
+
+
+# 25
+# Highest Scoring Word
+from string import ascii_lowercase
+
+def high(x):
+    c = [sum([ascii_lowercase.index(char) + 1 for char in word]) for word in x.split()]
+    return x.split()[c.index(max(c))]

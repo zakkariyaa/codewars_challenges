@@ -243,3 +243,18 @@ function filterLongWords(sentence, n) {
   
   return longWords;
 }
+
+
+
+// 18
+// Split Strings
+function solution(str){
+  const newStr = str.length % 2 === 0 ? str : str + '_';
+  const splittedLetters = [];
+    
+  for (let i = 0; i < newStr.length; i+=2) {
+    splittedLetters.push(newStr[i] + newStr[i + 1])
+  }
+    
+  return splittedLetters
+}
