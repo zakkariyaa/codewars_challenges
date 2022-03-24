@@ -258,3 +258,12 @@ function solution(str){
     
   return splittedLetters
 }
+
+
+
+//
+function duplicateEncode(word){
+  return word.toLowerCase().split('').map((char, index, letters) => {
+    return letters.indexOf(char) === letters.lastIndexOf(char) ? '(' : ')'
+  }).join('');
+}
