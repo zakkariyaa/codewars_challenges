@@ -272,3 +272,41 @@ def unique_in_order(iterable):
 # Bit Counting
 def count_bits(n):
     return str(bin(n)[2:]).count('1')
+
+
+# 29
+# max diff - easy
+def max_diff(lst):
+    return max(lst) - min(lst) if len(lst) > 1 else 0
+
+
+# 30
+# Character Counter
+def validate_word(word):
+    return len(list(set([word.lower().count(char) for char in word.lower()]))) == 1
+
+
+# 31
+# Spacify
+def spacify(string):
+    return ' '.join([char for char in string])
+
+
+# 32
+# Merge two sorted arrays into one
+def merge_arrays(arr1, arr2):
+    return sorted(list(set(arr1 + arr2)))
+
+
+# 33
+# Case swapping
+def swap(string_):
+    return string_.swapcase()
+
+
+# 34
+# Password Hashes
+import hashlib
+
+def pass_hash(str):
+    return hashlib.md5(str.encode()).hexdigest()
