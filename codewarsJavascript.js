@@ -261,9 +261,81 @@ function solution(str){
 
 
 
-//
+// 19
+// Duplicate Encoder
+String.prototype.count=function(c) { 
+  let result = 0
+  for (let i = 0; i < this.length; i++) {
+    if (this[i] === c) {
+      result++;
+    }
+  }
+  return result;
+};
+
 function duplicateEncode(word){
-  return word.toLowerCase().split('').map((char, index, letters) => {
-    return letters.indexOf(char) === letters.lastIndexOf(char) ? '(' : ')'
-  }).join('');
+    const letters =  word.toLowerCase().split('')
+    return letters.map(char => {
+      return word.toLowerCase().count(char) > 1 ?  ')' :  '('
+    }).join('')
+}
+
+
+// 20
+// Two to One
+function longest(s1, s2) {
+  const merged = (s1 + s2).split('').sort()
+  return merged.filter((el, index) => merged.indexOf(el) === index).join('')
+}
+
+
+// 21
+// Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {
+  const sorted = numbers.sort((num1, num2) => num1 - num2)
+  return sorted[0] + sorted[1]
+}
+
+
+// 22
+// Complementary DNA
+function DNAStrand(dna){
+  return dna.split('').map(char => char === 'A' ? 'T' : char === 'T' ? 'A' : char === 'G' ? 'C' : char === 'C' ? 'G' : '').join('')
+}
+
+
+// 23
+// Shortest Word
+function findShort(s){
+  return (s.split(' ').reduce((prev, current) => current.length > prev.length ? prev : current)).length
+}
+
+
+// 24
+// Exes and Ohs
+function XO(str) {
+  const x = str.toLowerCase().split('').filter(el => el == 'x')
+  const o = str.toLowerCase().split('').filter(el => el == 'o')
+
+  return x.length === o.length
+}
+
+
+// 25
+// Get the Middle Character
+function getMiddle(s) {
+  const middle = Math.floor(s.length / 2)
+  return s.length % 2 == 0 ? s[middle - 1] + s[middle] : s[middle]
+}
+
+
+// 26
+// Simple Pig Latin
+function pigIt(str){
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+  const words = str.split(' ').map(word => {
+    return word.toLowerCase().split('').every(char => alphabet.includes(char)) ? word.slice(1) + word[0] + 'ay' : word
+  }).join(' ')
+  
+  return words
 }

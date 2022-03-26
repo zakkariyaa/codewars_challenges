@@ -310,3 +310,14 @@ import hashlib
 
 def pass_hash(str):
     return hashlib.md5(str.encode()).hexdigest()
+
+
+# 35
+# Exes and Ohs
+def xo(s):
+    return s.lower().count('o') == s.lower().count('x')
+
+
+# 36
+# Get the square of a number without ** or * or pow()
+def square(n):return sum([n for i in range(0,n)])
