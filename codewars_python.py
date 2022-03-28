@@ -321,3 +321,46 @@ def xo(s):
 # 36
 # Get the square of a number without ** or * or pow()
 def square(n):return sum([n for i in range(0,n)])
+
+
+# 37
+# Shortest Word
+def find_short(s):
+    words = s.split()
+    word_lengths = {word: len(word) for word in words}
+    return min(list(word_lengths.values()))
+
+
+# 38
+# Isograms
+def is_isogram(string):
+    return len(set(string.lower())) == len(string)
+
+
+# 39
+# Descending Order
+def descending_order(num):
+    sorted_nums = sorted([int(num) for num in str(num)])
+    sorted_nums.reverse()
+    return int(''.join([str(num) for num in sorted_nums]))
+
+
+# 40
+# Highest and Lowest
+def high_and_low(numbers):
+    nums = [int(num) for num in numbers.split()]
+    return f'{str(max(nums))} {str(min(nums))}'
+
+
+# 41
+# Square Every Digit
+def square_digits(num):
+    nums = [num for num in str(num)]
+    squared = [int(num) ** 2 for num in nums]
+    return int(''.join([str(num) for num in squared]))
+
+
+# 42
+# Vowel Count
+def get_count(sentence):
+    return len([char for char in sentence if char in 'aeiou'])
