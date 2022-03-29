@@ -339,3 +339,77 @@ function pigIt(str){
   
   return words
 }
+
+
+// 27
+// Reverse words
+function reverseWords(str) {
+  return str.split(' ').map(word => word.split('').reverse().join('')).join(' ')
+}
+
+
+// 28
+// Odd or Even?
+function oddOrEven(array) {
+  return array.reduce((prev, current) => prev + current, 0) % 2 === 0 ? 'even' : 'odd'
+}
+
+
+// 29
+// Find the divisors!
+function divisors(integer) {
+  const divisors = [];
+  for (let i = 2; i < integer; i++) {
+    if (integer % i === 0) {
+      divisors.push(i)
+    }
+  }
+  
+  return divisors.length >= 1 ? divisors : `${integer} is prime`
+}
+
+
+// 30
+// Number of People in the Bus
+var number = function(busStops){
+  let onBus = 0;
+  let offBus = 0;
+  for (let stop of busStops) {
+    onBus += stop[0]
+    offBus += stop[1]
+  }
+  
+  return onBus - offBus
+}
+
+
+// 31
+// Binary Addition
+function addBinary(a,b) {
+  const sum = a + b;
+  return sum.toString(2)
+}
+
+
+// 32
+// Printer Errors
+function printerError(s) {
+  const check = 'nopqrstuvwxyz'
+  const errors = s.split('').filter(char => check.includes(char))
+  
+  return `${errors.length}/${s.length}`
+}
+
+
+// 33
+// Friend or Foe?
+function friend(friends){
+  return friends.filter(name => name.length === 4)
+}
+
+
+// 34
+// Categorize New Member
+function openOrSenior(data){
+  return data.map(info => info[0] >= 55 && info[1] > 7 ? 'Senior' : 'Open')
+}
