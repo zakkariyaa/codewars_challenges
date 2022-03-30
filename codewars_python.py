@@ -364,3 +364,33 @@ def square_digits(num):
 # Vowel Count
 def get_count(sentence):
     return len([char for char in sentence if char in 'aeiou'])
+
+
+# 43
+# Replace With Alphabet Position
+from string import ascii_lowercase
+
+def alphabet_position(text):
+    words = text.lower().split()
+    indexes = [ascii_lowercase.index(char) + 1 for word in words for char in word if char in ascii_lowercase]
+    return ' '.join([str(num) for num in indexes])
+
+
+
+# 44
+# Stop gninnipS My sdroW!
+def spin_words(sentence):
+    return ' '.join([word[::-1] if len(word) >= 5 else word for word in sentence.split()])
+
+
+# 45
+# Find the odd int
+def find_it(seq):
+    return sum([key for key, value in {num: seq.count(num) for num in seq}.items() if value % 2 != 0])
+
+
+# 46
+# Multiples of 3 or 5
+def solution(number):
+    return 0 if number < 0 else sum([num for num in range(1, number) if num % 3 == 0 or num % 5 == 0])
+
