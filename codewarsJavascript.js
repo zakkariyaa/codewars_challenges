@@ -413,3 +413,10 @@ function friend(friends){
 function openOrSenior(data){
   return data.map(info => info[0] >= 55 && info[1] > 7 ? 'Senior' : 'Open')
 }
+
+
+// 35
+// Case Swapping
+function swap(str){
+  return str.split('').map(char => char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase()).join('')
+}
