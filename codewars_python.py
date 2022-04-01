@@ -394,3 +394,10 @@ def find_it(seq):
 def solution(number):
     return 0 if number < 0 else sum([num for num in range(1, number) if num % 3 == 0 or num % 5 == 0])
 
+
+# 47
+# Remove All The Marked Elements of a List
+class List:
+    def remove_(self, integer_list, values_list):
+        return [num for num in integer_list if num not in values_list]
+
