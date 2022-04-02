@@ -420,3 +420,39 @@ function openOrSenior(data){
 function swap(str){
   return str.split('').map(char => char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase()).join('')
 }
+
+
+// 36
+// Bit Counting
+var countBits = function(n) {
+  return Number(n.toString(2).split('').filter(el => el == 1)
+  .reduce((a, b) => Number(a) + Number(b), 0))
+};
+
+
+// 37
+// Find the odd int
+function count(arr, num) {
+  let count = 0;
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] === num) {
+      count += 1
+    }
+  }
+  return count
+}
+
+function findOdd(A) {
+  return A.filter(num => count(A, num) % 2 !== 0)[0]
+}
+
+
+// 38
+// Multiples of 3 or 5
+function solution(number){
+  let sum = 0;
+  for (let i = 0; i < number; i++) {
+    i % 3 === 0 || i % 5 === 0 ? sum += i : sum += 0
+  }
+  return sum;
+}
