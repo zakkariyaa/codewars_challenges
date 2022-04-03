@@ -1,5 +1,10 @@
 # 1
 # Credit Card Mask
+import hashlib
+from math import sqrt
+from string import ascii_lowercase
+
+
 def maskify(cc):
     length = len(cc) - 4
     last_four = cc[-4:]
@@ -10,7 +15,8 @@ def maskify(cc):
 
 # 2
 # Replace With Alphabet Position
-from string import ascii_lowercase
+
+
 def alphabet_position(text):
     fixed_str = ''
     text = text.lower()
@@ -35,6 +41,8 @@ def is_triangle(a, b, c):
 
 # 4
 # Is this a triangle?
+
+
 def is_triangle(a, b, c):
     if a > 0 and b > 0 and c > 0:
         nums = [a, b, c]
@@ -45,6 +53,8 @@ def is_triangle(a, b, c):
 
 # 5
 # Mumbling
+
+
 def accum(s):
     new_s = ''
     s = s.lower()
@@ -73,7 +83,7 @@ def to_jaden_case(string):
 
 # 8
 # Detect Pangram
-from string import ascii_lowercase
+
 
 def is_pangram(s):
     return all([letter in s for letter in ascii_lowercase])
@@ -85,11 +95,11 @@ def spin_words(sentence):
     return ''.join([word + ' ' if len(word) < 5 else word[::-1] + ' ' for word in sentence.split()]).strip()
 
 
-
 # 10
 # Which are in?
 def in_array(array1, array2):
-    substrings = list(set([el for el in array1 for el2 in array2 if el in el2]))
+    substrings = list(
+        set([el for el in array1 for el2 in array2 if el in el2]))
     substrings.sort()
     return substrings
 
@@ -103,36 +113,37 @@ def array_diff(a, b):
 # 12
 # Create Phone Number
 def create_phone_number(n):
-	return f'({n[0]}{n[1]}{n[2]}) {n[3]}{n[4]}{n[5]}-{n[6]}{n[7]}{n[8]}{n[9]}'
+    return f'({n[0]}{n[1]}{n[2]}) {n[3]}{n[4]}{n[5]}-{n[6]}{n[7]}{n[8]}{n[9]}'
 
 
 # 13
 # Does my number look big in this?
 def narcissistic(value):
-	return sum([pow(int(num), len(str(value))) for num in str(value)]) == value
+    return sum([pow(int(num), len(str(value))) for num in str(value)]) == value
 
 
 # 14
 # Count characters in your string
 def count(string):
     if string:
-    	return {char: string.count(char) for char in string}
+        return {char: string.count(char) for char in string}
     return {}
 
 
 # 15
 # Highest Scoring Word
-from string import ascii_lowercase
+
 
 def high(x):
-	c = [sum([ascii_lowercase.index(char) + 1 for char in word]) for word in x.split()]
-	return x.split()[c.index(max(c))]
+    c = [sum([ascii_lowercase.index(char) + 1 for char in word])
+         for word in x.split()]
+    return x.split()[c.index(max(c))]
 
 
 # 16
 # Where my anagrams at?
 def anagrams(word, words):
-	return [w for w in words if ''.join(sorted(w)) == ''.join(sorted(word))]
+    return [w for w in words if ''.join(sorted(w)) == ''.join(sorted(word))]
 
 
 # 17
@@ -149,15 +160,17 @@ def find_outlier(integers):
 # 18
 # Your order, please
 def order(sentence):
-  words = sentence.split()
-  seperated = {char: word for word in words for char in word if char.isnumeric()}
+    words = sentence.split()
+    seperated = {
+        char: word for word in words for char in word if char.isnumeric()}
 
-  word_positions = list(seperated.keys())
-  word_positions.sort()
+    word_positions = list(seperated.keys())
+    word_positions.sort()
 
-  fixed_words = ' '.join([seperated[position] for position in word_positions])
+    fixed_words = ' '.join([seperated[position]
+                           for position in word_positions])
 
-  return fixed_words
+    return fixed_words
 
 
 # 19
@@ -171,11 +184,9 @@ def duplicate_count(text):
         else:
             letters[letter] = 1
 
-
     duplicates = [key for key, value in letters.items() if letters[key] > 1]
 
     return len(duplicates)
-
 
 
 # 20
@@ -187,7 +198,6 @@ def longest(a1, a2):
     return ''.join(strings)
 
 
-
 # 21
 # Get the Middle Character
 def get_middle(s):
@@ -195,7 +205,7 @@ def get_middle(s):
 
     if word_length % 2 == 0:
         middle = word_length // 2
-        return s[middle -1 ] + s[middle]
+        return s[middle - 1] + s[middle]
     else:
         middle = word_length // 2
         return s[middle]
@@ -207,23 +217,22 @@ def array_diff(a, b):
     return [item for item in a if item not in b]
 
 
-
 # 23
 # Is a number prime?
-from math import sqrt
+
 
 def is_prime(num):
     if num <= 1:
         return False
-    
+
     i = 2
-    
-    while i <= sqrt(num):    
+
+    while i <= sqrt(num):
         if num % i == 0:
             return False
         i += 1
-        
-    return True 
+
+    return True
 
 
 # 24
@@ -231,28 +240,27 @@ def is_prime(num):
 def solution(s):
     new_str = s if len(s) % 2 == 0 else s + '_'
     splitted_letters = []
-    
+
     for i in range(0, len(new_str), 2):
         splitted_letters.append(new_str[i] + new_str[i + 1])
-        
+
     return splitted_letters
 
 
 # 25
 # Highest Scoring Word
-from string import ascii_lowercase
+
 
 def high(x):
-    c = [sum([ascii_lowercase.index(char) + 1 for char in word]) for word in x.split()]
+    c = [sum([ascii_lowercase.index(char) + 1 for char in word])
+         for word in x.split()]
     return x.split()[c.index(max(c))]
-
 
 
 # 26
 # Take a Ten Minute Walk
 def is_valid_walk(walk):
     return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
-
 
 
 # 27
@@ -262,10 +270,10 @@ def unique_in_order(iterable):
     unique = []
 
     for char in iterable:
-        words.append(char) if bool(unique) and char == unique[-1] else unique.append(char)
+        words.append(char) if bool(
+            unique) and char == unique[-1] else unique.append(char)
 
     return unique
-
 
 
 # 28
@@ -306,7 +314,7 @@ def swap(string_):
 
 # 34
 # Password Hashes
-import hashlib
+
 
 def pass_hash(str):
     return hashlib.md5(str.encode()).hexdigest()
@@ -320,7 +328,7 @@ def xo(s):
 
 # 36
 # Get the square of a number without ** or * or pow()
-def square(n):return sum([n for i in range(0,n)])
+def square(n): return sum([n for i in range(0, n)])
 
 
 # 37
@@ -368,13 +376,13 @@ def get_count(sentence):
 
 # 43
 # Replace With Alphabet Position
-from string import ascii_lowercase
+
 
 def alphabet_position(text):
     words = text.lower().split()
-    indexes = [ascii_lowercase.index(char) + 1 for word in words for char in word if char in ascii_lowercase]
+    indexes = [ascii_lowercase.index(
+        char) + 1 for word in words for char in word if char in ascii_lowercase]
     return ' '.join([str(num) for num in indexes])
-
 
 
 # 44
@@ -401,3 +409,15 @@ class List:
     def remove_(self, integer_list, values_list):
         return [num for num in integer_list if num not in values_list]
 
+
+# 48
+# Find the missing letter
+
+
+def find_missing_letter(chars):
+    normalized_chars = [char.lower() for char in chars]
+    chars_range = ascii_lowercase[ascii_lowercase.index(
+        normalized_chars[0]):ascii_lowercase.index(normalized_chars[-1]) + 1]
+    missing = ''.join(
+        [missing_char for missing_char in chars_range if missing_char not in normalized_chars])
+    return missing if chars[0] == chars[0].lower() else missing.capitalize()
