@@ -989,3 +989,10 @@ function lovefunc(flower1, flower2) {
 
   return odds || evens ? false : true
 }
+
+
+// 100
+// Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return fuelLeft * mpg >= distanceToPump ? true : false
+};
