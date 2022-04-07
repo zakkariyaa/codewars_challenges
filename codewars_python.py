@@ -412,8 +412,6 @@ class List:
 
 # 48
 # Find the missing letter
-
-
 def find_missing_letter(chars):
     normalized_chars = [char.lower() for char in chars]
     chars_range = ascii_lowercase[ascii_lowercase.index(
@@ -421,3 +419,9 @@ def find_missing_letter(chars):
     missing = ''.join(
         [missing_char for missing_char in chars_range if missing_char not in normalized_chars])
     return missing if chars[0] == chars[0].lower() else missing.capitalize()
+
+
+# 49
+# Even or Odd
+def even_or_odd(number):
+    return 'Even' if number % 2 == 0 else 'Odd'
