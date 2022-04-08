@@ -425,3 +425,15 @@ def find_missing_letter(chars):
 # Even or Odd
 def even_or_odd(number):
     return 'Even' if number % 2 == 0 else 'Odd'
+
+
+# 50
+# Remove First and Last Character
+def remove_char(s):
+    return s[1:-1]
+
+
+# 51
+# Return Negative
+def make_negative(number):
+    return number if number < 1 or number == 0 else -(number)
