@@ -456,3 +456,41 @@ function solution(number){
   }
   return sum;
 }
+
+
+// 39
+// Turn the Mars rover to take pictures
+function turn(pos1, pos2) {
+  const directions = {
+    NE: 'right',
+    NW: 'left',
+    EN: 'left',
+    ES: 'right',
+    SE: 'left',
+    SW: 'right',
+    WS: 'left',
+    WN: 'right'
+  }
+  
+  const positions = pos1 + pos2
+  return directions[positions];
+}
+
+
+// 40
+// Find the nth Digit of a Number
+var findDigit = function(num, nth){
+  const nums = String(Math.abs(num)).split('').reverse()
+  return nth < 0 || nth === 0 ? -1 : nth > nums.length ? 0 : Number(nums[nth - 1])
+}
+
+
+// 41
+// ASCII Shift Encryption/Decryption
+function asciiEncrypt(plaintext) {
+  return plaintext.split('').map((char, index) => String.fromCharCode(char.charCodeAt() + index)).join('')
+};
+    
+function asciiDecrypt(ciphertext) {
+    return ciphertext.split('').map((char, index) => String.fromCharCode(char.charCodeAt() - index)).join('')
+};
