@@ -437,3 +437,15 @@ def remove_char(s):
 # Return Negative
 def make_negative(number):
     return number if number < 1 or number == 0 else -(number)
+
+
+# 52
+# Sum of positive
+def positive_sum(arr):
+    return sum(num for num in arr if num > 0)
+
+
+# 53
+# Opposite number
+def opposite(number):
+    return abs(number) if number < 0 else number - (number * 2)
