@@ -1,5 +1,6 @@
 # 1
 # Credit Card Mask
+from string import ascii_lowercase as alphabet
 import hashlib
 from math import sqrt
 from string import ascii_lowercase
@@ -449,3 +450,20 @@ def positive_sum(arr):
 # Opposite number
 def opposite(number):
     return abs(number) if number < 0 else number - (number * 2)
+
+
+# 54
+# Change it up
+def changer(s):
+    step1 = ['a' if char == 'z' else alphabet[alphabet.index(
+        char) + 1] if char.isalpha() and char != 'z' else char for char in s.lower()]
+    step2 = [char.capitalize() if char in 'aeiou' else char for char in step1]
+    return ''.join(step2)
+
+
+# 55
+# Which are in?
+def in_array(array1, array2):
+    unique = set(
+        [word1 for word1 in array1 for word2 in array2 if word1 in word2])
+    return sorted(list(unique))
