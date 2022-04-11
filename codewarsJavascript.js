@@ -502,3 +502,12 @@ function betterThanAverage(classPoints, yourPoints) {
 	const totalScore = classPoints.reduce((a, b) => a + b , 0) / classPoints.length
   return yourPoints > totalScore
 }
+
+
+// 43
+// Find the vowels
+function vowelIndices(word){
+  return word.split('').map((char, index) => {
+  	return 'aeiouyAEIOUY'.includes(char) ? index + 1 : ''
+  }).filter(el => el !== '')
+}
