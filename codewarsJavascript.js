@@ -494,3 +494,11 @@ function asciiEncrypt(plaintext) {
 function asciiDecrypt(ciphertext) {
     return ciphertext.split('').map((char, index) => String.fromCharCode(char.charCodeAt() - index)).join('')
 };
+
+
+// 42
+// How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+	const totalScore = classPoints.reduce((a, b) => a + b , 0) / classPoints.length
+  return yourPoints > totalScore
+}
