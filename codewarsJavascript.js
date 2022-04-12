@@ -979,3 +979,13 @@ function getAverage(marks) {
   const sum = marks.reduce((a, b) => a + b)
   return Math.floor(sum / marks.length)
 }
+
+
+// 99
+// Opposites Attract
+function lovefunc(flower1, flower2) {
+  const evens = flower1 % 2 === 0 && flower2 % 2 === 0
+  const odds = flower1 % 2 !== 0 && flower2 % 2 !== 0
+
+  return odds || evens ? false : true
+}
