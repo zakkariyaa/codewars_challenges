@@ -467,3 +467,10 @@ def in_array(array1, array2):
     unique = set(
         [word1 for word1 in array1 for word2 in array2 if word1 in word2])
     return sorted(list(unique))
+
+
+# 56
+# Find the unique number
+def find_uniq(arr):
+    nums = list(set(arr))
+    return [num for num in nums if arr.count(num) == 1][0]
