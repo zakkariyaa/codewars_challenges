@@ -511,3 +511,22 @@ function vowelIndices(word){
   	return 'aeiouyAEIOUY'.includes(char) ? index + 1 : ''
   }).filter(el => el !== '')
 }
+
+
+// 44
+// 'x' marks the spot.
+const xMarksTheSpot = (input) => {
+  const xSpot = []
+  
+  for (let i = 0; i < input.length; i++) {
+    const list = input[i]
+    for (let k = 0; k < list.length; k++) {
+      const element = list[k]
+      if (element === 'x') {
+        xSpot.push([i, k])
+      }
+    }
+  }
+  
+  return xSpot.length > 1 || xSpot.length === 0 ?  [] : xSpot[0]
+}
