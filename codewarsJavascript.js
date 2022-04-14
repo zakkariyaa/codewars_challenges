@@ -540,3 +540,16 @@ function unusedDigits() {
   const waldos = digits.filter(num => !nums.includes(num))
   return waldos.join('')
 }
+
+
+// 46
+function dropCap(n) {
+  const words = n.split(' ')
+  const capitalized = words.map(el => {
+    if (el !== '' && el.length > 2) {
+      return el[0].toUpperCase() + el.slice(1).toLowerCase()
+    } else return el
+  })
+  
+  return capitalized.join(' ')
+}
