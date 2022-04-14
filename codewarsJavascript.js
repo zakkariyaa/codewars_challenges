@@ -530,3 +530,13 @@ const xMarksTheSpot = (input) => {
   
   return xSpot.length > 1 || xSpot.length === 0 ?  [] : xSpot[0]
 }
+
+
+// 45
+// Filter unused digits
+function unusedDigits() {
+  const digits = '0123456789'.split('')
+  const nums = Object.values(arguments).join().split('').filter(el => el !== ',')
+  const waldos = digits.filter(num => !nums.includes(num))
+  return waldos.join('')
+}
