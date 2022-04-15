@@ -1,5 +1,6 @@
 # 1
 # Credit Card Mask
+from string import ascii_uppercase as l, ascii_lowercase as u, digits as d
 from string import ascii_lowercase as alphabet
 import hashlib
 from math import sqrt
@@ -480,3 +481,12 @@ def find_uniq(arr):
 # Where my anagrams at?
 def anagrams(word, words):
     return [w for w in words if sorted(w) == sorted(word)]
+
+
+# 58
+# Not very secure
+def alphanumeric(password):
+    if password:
+        return all(char in l or char in u or char in d for char in password)
+    else:
+        return False
