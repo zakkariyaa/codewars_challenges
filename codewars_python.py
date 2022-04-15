@@ -474,3 +474,9 @@ def in_array(array1, array2):
 def find_uniq(arr):
     nums = list(set(arr))
     return [num for num in nums if arr.count(num) == 1][0]
+
+
+# 57
+# Where my anagrams at?
+def anagrams(word, words):
+    return [w for w in words if sorted(w) == sorted(word)]
