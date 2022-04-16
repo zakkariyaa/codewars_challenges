@@ -553,3 +553,12 @@ function dropCap(n) {
   
   return capitalized.join(' ')
 }
+
+
+// 47
+// Moving Zeros To The End
+function moveZeros(arr) {
+  const zeroes = arr.filter(el => el === 0)
+  const noZeroes = arr.filter(el => el !== 0)
+  return [...noZeroes, ...zeroes]
+}
