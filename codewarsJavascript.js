@@ -562,3 +562,19 @@ function moveZeros(arr) {
   const noZeroes = arr.filter(el => el !== 0)
   return [...noZeroes, ...zeroes]
 }
+
+
+// 48
+// First non-repeating character
+Array.prototype.count = function(item) {
+  let count = 0
+  this.forEach(el => el === item ? count += 1 : count += 0)
+  return count
+}
+
+function firstNonRepeatingLetter(s) {
+  const chars = s.toLowerCase().split('')
+  const elementCount = chars.map((el, index) => chars.count(el) === 1 ? index : '')
+  const filtered = elementCount.filter(el => el !== '')
+  return !s || filtered.length < 1 ? '' : s[filtered[0]]
+}
