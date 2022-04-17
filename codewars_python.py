@@ -17,8 +17,6 @@ def maskify(cc):
 
 # 2
 # Replace With Alphabet Position
-
-
 def alphabet_position(text):
     fixed_str = ''
     text = text.lower()
@@ -54,7 +52,6 @@ def is_triangle(a, b, c):
         return False
 
 # 5
-# Mumbling
 
 
 def accum(s):
@@ -85,8 +82,6 @@ def to_jaden_case(string):
 
 # 8
 # Detect Pangram
-
-
 def is_pangram(s):
     return all([letter in s for letter in ascii_lowercase])
 
@@ -134,8 +129,6 @@ def count(string):
 
 # 15
 # Highest Scoring Word
-
-
 def high(x):
     c = [sum([ascii_lowercase.index(char) + 1 for char in word])
          for word in x.split()]
@@ -221,8 +214,6 @@ def array_diff(a, b):
 
 # 23
 # Is a number prime?
-
-
 def is_prime(num):
     if num <= 1:
         return False
@@ -251,8 +242,6 @@ def solution(s):
 
 # 25
 # Highest Scoring Word
-
-
 def high(x):
     c = [sum([ascii_lowercase.index(char) + 1 for char in word])
          for word in x.split()]
@@ -316,8 +305,6 @@ def swap(string_):
 
 # 34
 # Password Hashes
-
-
 def pass_hash(str):
     return hashlib.md5(str.encode()).hexdigest()
 
@@ -498,3 +485,9 @@ def alphanumeric(password):
 # Sort Numbers
 def solution(nums):
     return sorted(nums) if nums else []
+
+
+# 60
+# Simple Pig Latin
+def pig_it(text):
+    return ' '.join([word[1:] + word[0] + 'ay' if word.isalpha() else word for word in text.split()])
