@@ -485,6 +485,8 @@ def anagrams(word, words):
 
 # 58
 # Not very secure
+
+
 def alphanumeric(password):
     if password:
         return all(char in l or char in u or char in d for char in password)
