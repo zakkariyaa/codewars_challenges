@@ -491,3 +491,10 @@ def solution(nums):
 # Simple Pig Latin
 def pig_it(text):
     return ' '.join([word[1:] + word[0] + 'ay' if word.isalpha() else word for word in text.split()])
+
+
+# 61
+# Moving Zeros To The End
+def move_zeros(array):
+    zeroes = [num for num in array if num == 0]
+    return [num for num in array if not num == 0] + zeroes
