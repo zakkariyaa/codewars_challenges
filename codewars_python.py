@@ -490,3 +490,9 @@ def alphanumeric(password):
         return all(char in l or char in u or char in d for char in password)
     else:
         return False
+
+
+# 59
+# Sort Numbers
+def solution(nums):
+    return sorted(nums) if nums else []
