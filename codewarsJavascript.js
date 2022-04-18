@@ -578,3 +578,8 @@ function firstNonRepeatingLetter(s) {
   const filtered = elementCount.filter(el => el !== '')
   return !s || filtered.length < 1 ? '' : s[filtered[0]]
 }
+
+
+// 49
+// Even or Odd
+const even_or_odd = (number) => number % 2 === 0 ? 'Even' : 'Odd'
