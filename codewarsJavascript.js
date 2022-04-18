@@ -583,3 +583,10 @@ function firstNonRepeatingLetter(s) {
 // 49
 // Even or Odd
 const even_or_odd = (number) => number % 2 === 0 ? 'Even' : 'Odd'
+
+
+// 50
+// Sum of positive
+function positiveSum(arr) {
+	return arr.filter(num => num > 0).reduce((a, b) => a + b , 0)
+}
