@@ -590,3 +590,8 @@ const even_or_odd = (number) => number % 2 === 0 ? 'Even' : 'Odd'
 function positiveSum(arr) {
 	return arr.filter(num => num > 0).reduce((a, b) => a + b , 0)
 }
+
+
+// 51
+// Return Negative
+const makeNegative = (num) => num < 0 ? num : -num 
