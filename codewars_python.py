@@ -498,3 +498,9 @@ def pig_it(text):
 def move_zeros(array):
     zeroes = [num for num in array if num == 0]
     return [num for num in array if not num == 0] + zeroes
+
+
+# 62
+# Reversed Strings
+def solution(string):
+    return string[::-1]
