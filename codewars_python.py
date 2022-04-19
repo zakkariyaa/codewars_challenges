@@ -504,3 +504,9 @@ def move_zeros(array):
 # Reversed Strings
 def solution(string):
     return string[::-1]
+
+
+# 63
+# Convert boolean values to strings 'Yes' or 'No'.
+def bool_to_word(boolean):
+    return 'Yes' if boolean else 'No'
