@@ -528,3 +528,13 @@ def repeat_str(repeat, string):
 # Find the smallest integer in the array
 def find_smallest_int(arr):
     return min(arr)
+
+
+# 67
+# Grasshopper - Summation
+def summation(num):
+    count = 0
+    for i in range(1, num + 1):
+        count += i
+
+    return count
