@@ -516,3 +516,9 @@ def bool_to_word(boolean):
 # Convert a Number to a String!
 def number_to_string(num):
     return str(num)
+
+
+# 65
+# String repeat
+def repeat_str(repeat, string):
+    return string * repeat
