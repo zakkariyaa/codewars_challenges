@@ -1,5 +1,6 @@
 # 1
 # Credit Card Mask
+from string import digits as d
 from string import ascii_uppercase as l, ascii_lowercase as u, digits as d
 from string import ascii_lowercase as alphabet
 import hashlib
@@ -538,3 +539,16 @@ def summation(num):
         count += i
 
     return count
+
+
+# 68
+# ISBN-10 Validation
+
+
+def valid_ISBN10(isbn):
+    if (len(isbn) == 10) and (all(n in d for n in isbn[:9])) and (isbn[-1] in d or isbn[-1] == 'X'):
+        nums = [int(num) if num in d else 10 for num in isbn]
+        multiplied = [num * (idx + 1) for idx, num in enumerate(nums)]
+        return sum(multiplied) % 11 == 0
+    else:
+        return False
