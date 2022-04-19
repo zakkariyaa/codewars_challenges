@@ -510,3 +510,9 @@ def solution(string):
 # Convert boolean values to strings 'Yes' or 'No'.
 def bool_to_word(boolean):
     return 'Yes' if boolean else 'No'
+
+
+# 64
+# Convert a Number to a String!
+def number_to_string(num):
+    return str(num)
