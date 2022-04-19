@@ -522,3 +522,9 @@ def number_to_string(num):
 # String repeat
 def repeat_str(repeat, string):
     return string * repeat
+
+
+# 66
+# Find the smallest integer in the array
+def find_smallest_int(arr):
+    return min(arr)
