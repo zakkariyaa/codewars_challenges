@@ -600,3 +600,8 @@ const makeNegative = (num) => num < 0 ? num : -num
 // 52
 // Opposite number
 const opposite = (number) => number < 0 ? Math.abs(number) : -number
+
+
+// 53
+// Remove First and Last Character
+const removeChar = str => str.slice(1, str.length - 1)
