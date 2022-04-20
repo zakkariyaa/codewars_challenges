@@ -605,3 +605,9 @@ const opposite = (number) => number < 0 ? Math.abs(number) : -number
 // 53
 // Remove First and Last Character
 const removeChar = str => str.slice(1, str.length - 1)
+
+
+// 54
+// Reversed Strings
+const solution = str => str.split('').reverse().join('')
+
