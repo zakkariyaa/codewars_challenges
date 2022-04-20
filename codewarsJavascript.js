@@ -595,3 +595,8 @@ function positiveSum(arr) {
 // 51
 // Return Negative
 const makeNegative = (num) => num < 0 ? num : -num 
+
+
+// 52
+// Opposite number
+const opposite = (number) => number < 0 ? Math.abs(number) : -number
