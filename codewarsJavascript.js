@@ -620,3 +620,8 @@ const boolToWord = bool => bool ? 'Yes' : 'No'
 // 56
 // Convert a Number to a String!
 const numberToString = num => String(num)
+
+
+// 57
+// String repeat
+const repeatStr = (n, s) => s.repeat(n)
