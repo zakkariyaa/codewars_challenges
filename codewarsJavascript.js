@@ -625,3 +625,12 @@ const numberToString = num => String(num)
 // 57
 // String repeat
 const repeatStr = (n, s) => s.repeat(n)
+
+
+// 58
+// Find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
