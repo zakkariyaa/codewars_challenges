@@ -611,3 +611,7 @@ const removeChar = str => str.slice(1, str.length - 1)
 // Reversed Strings
 const solution = str => str.split('').reverse().join('')
 
+
+// 55
+// Convert boolean values to strings 'Yes' or 'No'.
+const boolToWord = bool => bool ? 'Yes' : 'No'
