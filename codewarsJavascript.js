@@ -615,3 +615,8 @@ const solution = str => str.split('').reverse().join('')
 // 55
 // Convert boolean values to strings 'Yes' or 'No'.
 const boolToWord = bool => bool ? 'Yes' : 'No'
+
+
+// 56
+// Convert a Number to a String!
+const numberToString = num => String(num)
