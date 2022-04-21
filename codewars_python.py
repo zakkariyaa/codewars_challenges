@@ -1,13 +1,5 @@
 # 1
 # Credit Card Mask
-from string import digits as d
-from string import ascii_uppercase as l, ascii_lowercase as u, digits as d
-from string import ascii_lowercase as alphabet
-import hashlib
-from math import sqrt
-from string import ascii_lowercase
-
-
 def maskify(cc):
     length = len(cc) - 4
     last_four = cc[-4:]
@@ -18,6 +10,8 @@ def maskify(cc):
 
 # 2
 # Replace With Alphabet Position
+from string import ascii_lowercase
+
 def alphabet_position(text):
     fixed_str = ''
     text = text.lower()
@@ -42,8 +36,6 @@ def is_triangle(a, b, c):
 
 # 4
 # Is this a triangle?
-
-
 def is_triangle(a, b, c):
     if a > 0 and b > 0 and c > 0:
         nums = [a, b, c]
@@ -53,8 +45,7 @@ def is_triangle(a, b, c):
         return False
 
 # 5
-
-
+# Mumbling
 def accum(s):
     new_s = ''
     s = s.lower()
@@ -215,6 +206,8 @@ def array_diff(a, b):
 
 # 23
 # Is a number prime?
+from math import sqrt
+
 def is_prime(num):
     if num <= 1:
         return False
@@ -306,6 +299,8 @@ def swap(string_):
 
 # 34
 # Password Hashes
+import hashlib
+
 def pass_hash(str):
     return hashlib.md5(str.encode()).hexdigest()
 
@@ -366,12 +361,11 @@ def get_count(sentence):
 
 # 43
 # Replace With Alphabet Position
-
+from string import ascii_lowercase
 
 def alphabet_position(text):
     words = text.lower().split()
-    indexes = [ascii_lowercase.index(
-        char) + 1 for word in words for char in word if char in ascii_lowercase]
+    indexes = [ascii_lowercase.index(char) + 1 for word in words for char in word if char in ascii_lowercase]
     return ' '.join([str(num) for num in indexes])
 
 
@@ -443,6 +437,8 @@ def opposite(number):
 
 # 54
 # Change it up
+from string import ascii_lowercase as alphabet
+
 def changer(s):
     step1 = ['a' if char == 'z' else alphabet[alphabet.index(
         char) + 1] if char.isalpha() and char != 'z' else char for char in s.lower()]
@@ -473,7 +469,7 @@ def anagrams(word, words):
 
 # 58
 # Not very secure
-
+from string import ascii_uppercase as l, ascii_lowercase as u, digits as d
 
 def alphanumeric(password):
     if password:
@@ -543,7 +539,7 @@ def summation(num):
 
 # 68
 # ISBN-10 Validation
-
+from string import digits as d
 
 def valid_ISBN10(isbn):
     if (len(isbn) == 10) and (all(n in d for n in isbn[:9])) and (isbn[-1] in d or isbn[-1] == 'X'):
