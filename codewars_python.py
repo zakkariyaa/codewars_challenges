@@ -548,3 +548,15 @@ def valid_ISBN10(isbn):
         return sum(multiplied) % 11 == 0
     else:
         return False
+
+
+# 69
+# Remove String Spaces
+def no_space(x):
+    return ''.join([char for char in x if char != ' '])
+
+# 70
+# Abbreviate a Two Word Name
+def abbrev_name(name):
+    names = name.split(' ')
+    return names[0][0].capitalize() + '.' + names[1][0].capitalize()
