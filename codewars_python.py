@@ -567,12 +567,3 @@ def valid_ISBN10(isbn):
 # Remove String Spaces
 def no_space(x):
     return ''.join([char for char in x if char != ' '])
-<<<<<<< Updated upstream
-
-# 70
-# Abbreviate a Two Word Name
-def abbrev_name(name):
-    names = name.split(' ')
-    return names[0][0].capitalize() + '.' + names[1][0].capitalize()
-=======
->>>>>>> Stashed changes

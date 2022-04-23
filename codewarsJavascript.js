@@ -655,3 +655,10 @@ function nameShuffler(str) {
 function squareSum(numbers) {
   return numbers.map(num => num ** 2).reduce((a, b) => a + b, 0)
 }
+
+
+// 61
+// Counting sheep...
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter(el => el === true).length
+}
