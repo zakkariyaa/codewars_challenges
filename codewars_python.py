@@ -592,3 +592,14 @@ def likes(names):
         return f'{names[0]}, {names[1]} and {names[2]} like this'
     elif len(names) > 3:
         return f'{names[0]}, {names[1]} and {len(names) - 2} others like this'
+
+
+# 72
+# Are they the "same"?
+def comp(array1, array2):
+    if array1 and array2:
+        return sorted(num ** 2 for num in array1) == sorted(array2)
+    elif (array1 is not None and len(array1) == 0) and (array2 is not None and len(array2) == 0):
+        return True
+    else:
+        return False
