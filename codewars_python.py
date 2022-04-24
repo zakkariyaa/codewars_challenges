@@ -567,3 +567,13 @@ def valid_ISBN10(isbn):
 # Remove String Spaces
 def no_space(x):
     return ''.join([char for char in x if char != ' '])
+
+
+# 70
+# Sum of Digits / Digital Root
+def digital_root(n):
+    nums = n
+    while len(str(nums)) != 1:
+        nums = sum(int(num) for num in str(nums))
+
+    return nums
