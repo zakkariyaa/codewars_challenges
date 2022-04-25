@@ -662,3 +662,27 @@ function squareSum(numbers) {
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.filter(el => el === true).length
 }
+
+
+// 62
+// Counting Duplicates
+String.prototype.count = function (el) {
+  let count = 0
+  for (let i = 0; i < this.length; i++) {
+    this.toLowerCase()[i] === el ? count += 1 : count += 0
+  }
+
+  return count
+}
+
+function duplicateCount(text) {
+  let elCount = []
+  for (let i = 0; i < text.length; i++) {
+    if (text.count(text[i]) > 1) {
+      elCount.push(text[i])
+    }
+  }
+
+  const unique = new Set(elCount)
+  return [...unique].length
+}
