@@ -610,3 +610,9 @@ def comp(array1, array2):
 # String cleaning
 def string_clean(s):
     return ''.join(char for char in s if char not in digits)
+
+
+# 74
+# Convert number to reversed array of digits
+def digitize(n):
+    return [int(num) for num in str(n)[::-1]]
