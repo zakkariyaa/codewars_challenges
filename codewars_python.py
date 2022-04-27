@@ -1,5 +1,6 @@
 # 1
 # Credit Card Mask
+from string import digits
 from string import digits as d
 from string import ascii_uppercase as l, ascii_lowercase as u, digits as d
 from string import ascii_lowercase as alphabet
@@ -603,3 +604,9 @@ def comp(array1, array2):
         return True
     else:
         return False
+
+
+# 73
+# String cleaning
+def string_clean(s):
+    return ''.join(char for char in s if char not in digits)
