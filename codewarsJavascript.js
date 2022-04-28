@@ -739,3 +739,10 @@ function findNeedle(haystack) {
 function maps(x) {
   return x.map(num => num + num)
 }
+
+
+// 70
+// Convert a String to a Number!
+var stringToNumber = function (str) {
+  return Number(str)
+}
