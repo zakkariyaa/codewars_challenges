@@ -700,3 +700,10 @@ function litres(time) {
 function isDivisible(n, x, y) {
   return (n % x) === 0 && (n % y) === 0
 }
+
+
+// 65
+// Remove String Spaces
+function noSpace(x) {
+  return x.split('').filter(char => char !== ' ').join('')
+}
