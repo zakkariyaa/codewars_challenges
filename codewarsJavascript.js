@@ -686,3 +686,10 @@ function duplicateCount(text) {
   const unique = new Set(elCount)
   return [...unique].length
 }
+
+
+// 63
+// Keep Hydrated!
+function litres(time) {
+  return Math.floor(time * 0.5)
+}
