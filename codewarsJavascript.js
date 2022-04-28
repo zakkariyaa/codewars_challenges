@@ -746,3 +746,10 @@ function maps(x) {
 var stringToNumber = function (str) {
   return Number(str)
 }
+
+
+// 71
+// Returning Strings
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`
+}
