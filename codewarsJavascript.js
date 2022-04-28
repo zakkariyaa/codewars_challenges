@@ -732,3 +732,10 @@ function century(year) {
 function findNeedle(haystack) {
   return `found the needle at position ${haystack.indexOf('needle')}`
 }
+
+
+// 69
+// Beginner - Lost Without a Map
+function maps(x) {
+  return x.map(num => num + num)
+}
