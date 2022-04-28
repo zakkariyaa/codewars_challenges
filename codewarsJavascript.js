@@ -707,3 +707,14 @@ function isDivisible(n, x, y) {
 function noSpace(x) {
   return x.split('').filter(char => char !== ' ').join('')
 }
+
+
+// 66
+// Grasshopper - Summation
+var summation = function (num) {
+  let count = 0
+  for (let i = 1; i <= num; i++) {
+    count += i
+  }
+  return count
+}
