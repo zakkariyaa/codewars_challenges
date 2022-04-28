@@ -718,3 +718,17 @@ var summation = function (num) {
   }
   return count
 }
+
+
+// 67
+// Century From Year
+function century(year) {
+  return Math.ceil(year / 100)
+}
+
+
+// 68
+// A Needle in the Haystack
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf('needle')}`
+}
