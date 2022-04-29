@@ -753,3 +753,8 @@ var stringToNumber = function (str) {
 function greet(name) {
   return `Hello, ${name} how are you doing today?`
 }
+
+
+// 72
+// Function 1 - hello world
+const greet = () => 'hello world!'
