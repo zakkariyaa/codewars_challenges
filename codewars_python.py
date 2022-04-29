@@ -622,3 +622,10 @@ def digitize(n):
 # Ones and Zeros
 def binary_array_to_number(arr):
     return int(''.join(str(num) for num in arr), 2)
+
+
+# 76
+# Find the divisors!
+def divisors(integer):
+    divs = [n for n in range(2, integer) if integer % n == 0]
+    return divs if divs else f'{integer} is prime'
