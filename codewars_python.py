@@ -616,3 +616,9 @@ def string_clean(s):
 # Convert number to reversed array of digits
 def digitize(n):
     return [int(num) for num in str(n)[::-1]]
+
+
+# 75
+# Ones and Zeros
+def binary_array_to_number(arr):
+    return int(''.join(str(num) for num in arr), 2)
