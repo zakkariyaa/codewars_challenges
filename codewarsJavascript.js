@@ -971,3 +971,11 @@ function bmi(weight, height) {
     return 'Obese'
   }
 }
+
+
+// 98
+// Get the mean of an array
+function getAverage(marks) {
+  const sum = marks.reduce((a, b) => a + b)
+  return Math.floor(sum / marks.length)
+}
