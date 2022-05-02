@@ -943,9 +943,15 @@ const reverseSeq = n => {
 };
 
 
-
 // 95
 // Beginner Series #1 School Paperwork
 function paperwork(n, m) {
   return n > 0 && m > 0 ? n * m : 0
+}
+
+
+// 96
+// Jenny's secret message
+function greet(name) {
+  return name === 'Johnny' ? "Hello, my love!" : "Hello, " + name + "!"
 }
