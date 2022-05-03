@@ -758,3 +758,10 @@ function greet(name) {
 // 72
 // Function 1 - hello world
 const greet = () => 'hello world!'
+
+
+// 73
+// You only need one - Beginner
+function check(a, x) {
+  return a.includes(x)
+}
