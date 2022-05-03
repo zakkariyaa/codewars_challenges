@@ -629,3 +629,9 @@ def binary_array_to_number(arr):
 def divisors(integer):
     divs = [n for n in range(2, integer) if integer % n == 0]
     return divs if divs else f'{integer} is prime'
+
+
+# 77
+# Convert a String to a Number!
+def string_to_number(s):
+    return int(s)
