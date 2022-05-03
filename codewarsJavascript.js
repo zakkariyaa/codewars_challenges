@@ -765,3 +765,10 @@ const greet = () => 'hello world!'
 function check(a, x) {
   return a.includes(x)
 }
+
+
+// 74
+// Reversed Words
+function reverseWords(str) {
+  return str.split(' ').reverse().join(' ')
+}
