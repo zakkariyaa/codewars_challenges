@@ -786,3 +786,11 @@ function bonusTime(salary, bonus) {
 function smash(words) {
   return words.join(' ')
 };
+
+
+// 77
+// WeIrD StRiNg CaSe
+function toWeirdCase(string) {
+  const words = string.split(' ')
+  return words.map(word => word.split('').map((char, i) => i % 2 === 0 ? char.toUpperCase() : char.toLowerCase()).join('')).join(' ')
+}
