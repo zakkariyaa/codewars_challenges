@@ -772,3 +772,10 @@ function check(a, x) {
 function reverseWords(str) {
   return str.split(' ').reverse().join(' ')
 }
+
+
+// 75
+// Do I get a bonus?
+function bonusTime(salary, bonus) {
+  return bonus ? `£${salary * 10}` : `£${salary}`
+}
