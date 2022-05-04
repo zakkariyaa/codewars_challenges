@@ -779,3 +779,10 @@ function reverseWords(str) {
 function bonusTime(salary, bonus) {
   return bonus ? `£${salary * 10}` : `£${salary}`
 }
+
+
+// 76
+// Sentence Smash
+function smash(words) {
+  return words.join(' ')
+};
