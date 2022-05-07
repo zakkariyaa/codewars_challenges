@@ -635,3 +635,9 @@ def divisors(integer):
 # Convert a String to a Number!
 def string_to_number(s):
     return int(s)
+
+
+# 78
+# Don't give me five!
+def dont_give_me_five(start, end):
+    return len([n for n in range(start, end + 1) if not '5' in str(n)])
