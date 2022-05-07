@@ -806,3 +806,11 @@ function monkeyCount(n) {
 
   return nums
 }
+
+
+// 79
+// Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+  return name.startsWith('R') || name.startsWith('r') ?
+    `${name} plays banjo` : `${name} does not play banjo`
+}
