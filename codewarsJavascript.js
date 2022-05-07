@@ -794,3 +794,15 @@ function toWeirdCase(string) {
   const words = string.split(' ')
   return words.map(word => word.split('').map((char, i) => i % 2 === 0 ? char.toUpperCase() : char.toLowerCase()).join('')).join(' ')
 }
+
+
+// 78
+// Count the Monkeys!
+function monkeyCount(n) {
+  const nums = []
+  for (let num = 1; num <= n; num++) {
+    nums.push(num)
+  }
+
+  return nums
+}
