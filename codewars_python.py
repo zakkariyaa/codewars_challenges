@@ -659,3 +659,9 @@ def count_positives_sum_negatives(arr):
 # Function 1 - hello world
 def greet():
     return 'hello world!'
+
+
+# 82
+# You only need one - Beginner
+def check(seq, elem):
+    return elem in seq
