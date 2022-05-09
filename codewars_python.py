@@ -641,3 +641,9 @@ def string_to_number(s):
 # Don't give me five!
 def dont_give_me_five(start, end):
     return len([n for n in range(start, end + 1) if not '5' in str(n)])
+
+
+# 79
+# Returning Strings
+def greet(name):
+    return f'Hello, {name} how are you doing today?'
