@@ -653,3 +653,9 @@ def greet(name):
 # Count of positives / sum of negatives
 def count_positives_sum_negatives(arr):
     return [] if not arr else [sum(1 for num in arr if num > 0), sum(num for num in arr if num < 0)]
+
+
+# 81
+# Function 1 - hello world
+def greet():
+    return 'hello world!'
