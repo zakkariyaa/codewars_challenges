@@ -829,3 +829,11 @@ function sum(numbers) {
 
   return numbers.length > 0 ? numbers.reduce((a, b) => a + b, 0) : 0
 };
+
+
+
+// 81
+// Invert values
+function invert(array) {
+  return array.map(num => -Number(num));
+}
