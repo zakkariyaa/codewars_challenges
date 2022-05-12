@@ -894,3 +894,9 @@ function grow(x) {
   return x.reduce((a, b) => a * b, 1)
 }
 
+
+// 89
+// MakeUpperCase
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
