@@ -679,3 +679,9 @@ def reverse_words(s):
     words = s.split(' ')
     words.reverse()
     return ' '.join(words)
+
+
+# 85
+# Calculate average
+def find_average(numbers):
+    return 0 if not numbers else sum(numbers) / len(numbers)
