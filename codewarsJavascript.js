@@ -797,6 +797,12 @@ function toWeirdCase(string) {
 
 
 // 78
+// Convert number to reversed array of digits
+function digitize(n) {
+  return String(n).split('').reverse().map(n => Number(n))
+}
+
+// 78
 // Count the Monkeys!
 function monkeyCount(n) {
   const nums = []
@@ -823,3 +829,11 @@ function sum(numbers) {
 
   return numbers.length > 0 ? numbers.reduce((a, b) => a + b, 0) : 0
 };
+
+
+
+// 81
+// Invert values
+function invert(array) {
+  return array.map(num => -Number(num));
+}
