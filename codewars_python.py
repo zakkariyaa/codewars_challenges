@@ -665,3 +665,12 @@ def greet():
 # You only need one - Beginner
 def check(seq, elem):
     return elem in seq
+
+
+# 83
+# Invert values
+def invert(lst):
+    return [-(num) for num in lst]
+
+
+# 84
