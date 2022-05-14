@@ -831,9 +831,16 @@ function sum(numbers) {
 };
 
 
-
 // 81
 // Invert values
 function invert(array) {
   return array.map(num => -Number(num));
 }
+
+
+// 82
+// Find the capitals
+var capitals = function (word) {
+  const indexes = word.split('').map((c, idx) => c === c.toUpperCase() ? idx : null)
+  return indexes.filter(el => el !== null)
+};
