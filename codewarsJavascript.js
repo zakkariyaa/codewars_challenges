@@ -844,3 +844,11 @@ var capitals = function (word) {
   const indexes = word.split('').map((c, idx) => c === c.toUpperCase() ? idx : null)
   return indexes.filter(el => el !== null)
 };
+
+
+// 83
+// Two Oldest Ages
+function twoOldestAges(ages) {
+  const sorted = ages.sort((a, b) => a - b, 0)
+  return [sorted[sorted.length - 2], sorted[sorted.length - 1]]
+}
