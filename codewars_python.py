@@ -691,3 +691,9 @@ def find_average(numbers):
 # Small enough? - Beginner
 def small_enough(array, limit):
     return all(num < limit or num == limit for num in array)
+
+
+# 87
+# Remove anchor from URL
+def remove_url_anchor(url):
+    return url.split('#')[0]
