@@ -685,3 +685,9 @@ def reverse_words(s):
 # Calculate average
 def find_average(numbers):
     return 0 if not numbers else sum(numbers) / len(numbers)
+
+
+# 86
+# Small enough? - Beginner
+def small_enough(array, limit):
+    return all(num < limit or num == limit for num in array)
