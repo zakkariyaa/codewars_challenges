@@ -864,3 +864,18 @@ const sequenceSum = (begin, end, step) => {
 
   return sum
 };
+
+
+// 85
+// Anagram Detection
+var isAnagram = function (test, original) {
+  return original.toLowerCase().split('').sort().join('') === test.toLowerCase().split('').sort().join('')
+};
+
+
+// 86
+// Array plus array
+function arrayPlusArray(arr1, arr2) {
+  const join = arr1.concat(arr2)
+  return join.reduce((a, b) => a + b, 0)
+}
