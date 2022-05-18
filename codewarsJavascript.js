@@ -879,3 +879,11 @@ function arrayPlusArray(arr1, arr2) {
   const join = arr1.concat(arr2)
   return join.reduce((a, b) => a + b, 0)
 }
+
+
+
+// 87
+// Is he gonna survive?
+function hero(bullets, dragons) {
+  return bullets >= dragons * 2
+}
