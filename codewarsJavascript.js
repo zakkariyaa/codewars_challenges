@@ -929,3 +929,15 @@ function booleanToString(b) {
 function fakeBin(x) {
   return x.split('').map(el => Number(el) < 5 ? '0' : '1').join('')
 }
+
+
+// 94
+// Reversed sequence
+const reverseSeq = n => {
+  const nums = []
+  for (let i = n; i >= 1; i--) {
+    nums.push(i)
+  }
+
+  return nums
+};
