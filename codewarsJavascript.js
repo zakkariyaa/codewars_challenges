@@ -907,3 +907,11 @@ function makeUpperCase(str) {
 function simpleMultiplication(number) {
   return number % 2 === 0 ? 8 * number : 9 * number
 }
+
+
+// 91
+// Abbreviate a Two Word Name
+function abbrevName(name) {
+  const names = name.toUpperCase().split(' ')
+  return `${names[0][0]}.${names[1][0]}`
+}
