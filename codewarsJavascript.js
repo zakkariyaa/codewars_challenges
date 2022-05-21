@@ -915,3 +915,10 @@ function abbrevName(name) {
   const names = name.toUpperCase().split(' ')
   return `${names[0][0]}.${names[1][0]}`
 }
+
+
+// 92
+// Convert a Boolean to a String
+function booleanToString(b) {
+  return b ? 'true' : 'false'
+}
