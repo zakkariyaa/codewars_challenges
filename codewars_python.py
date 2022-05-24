@@ -697,3 +697,9 @@ def small_enough(array, limit):
 # Remove anchor from URL
 def remove_url_anchor(url):
     return url.split('#')[0]
+
+
+# 88
+# Disemvowel Trolls
+def disemvowel(string_):
+    return ''.join(char for char in string_ if char not in 'AEIOUaeiou')
