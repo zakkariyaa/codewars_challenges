@@ -703,3 +703,9 @@ def remove_url_anchor(url):
 # Disemvowel Trolls
 def disemvowel(string_):
     return ''.join(char for char in string_ if char not in 'AEIOUaeiou')
+
+
+# 89
+# Are You Playing Banjo?
+def are_you_playing_banjo(name):
+    return f'{name} plays banjo' if name[0] == 'r' or name[0] == 'R' else f'{name} does not play banjo'
