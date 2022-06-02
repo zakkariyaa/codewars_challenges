@@ -1216,9 +1216,9 @@ function getPlanetName(id) {
       break;
     case 7:
       name = 'Uranus';
-    case 8:
-      name = 'Neptune';
-      break;
+    // case 8:
+    //   name = 'Neptune';
+    //   break;
   }
 
   return name;
