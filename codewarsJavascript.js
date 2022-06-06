@@ -1216,10 +1216,16 @@ function getPlanetName(id) {
       break;
     case 7:
       name = 'Uranus';
-    // case 8:
-    //   name = 'Neptune';
-    //   break;
+    case 8:
+      name = 'Neptune';
+      break;
   }
 
   return name;
+}
+
+// 125
+// Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - sonYearsOld * 2);
 }
