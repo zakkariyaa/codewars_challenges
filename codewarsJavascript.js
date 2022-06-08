@@ -1229,3 +1229,11 @@ function getPlanetName(id) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - sonYearsOld * 2);
 }
+
+// 126
+// Keep up the hoop
+function hoopCount(n) {
+  return n >= 10
+    ? 'Great, now move on to tricks'
+    : 'Keep at it until you get it';
+}
