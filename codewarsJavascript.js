@@ -1237,3 +1237,12 @@ function hoopCount(n) {
     ? 'Great, now move on to tricks'
     : 'Keep at it until you get it';
 }
+
+// 127
+// Correct the mistakes of the character recognition software
+function correct(string) {
+  let newString = string.replace(/5/g, 'S');
+  newString = newString.replace(/0/g, 'O');
+  newString = newString.replace(/1/g, 'I');
+  return newString;
+}
