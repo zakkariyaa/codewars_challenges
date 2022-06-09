@@ -1246,3 +1246,9 @@ function correct(string) {
   newString = newString.replace(/1/g, 'I');
   return newString;
 }
+
+// 128
+// Grasshopper - Check for factor
+function checkForFactor(base, factor) {
+  return base % factor === 0;
+}
