@@ -1252,3 +1252,9 @@ function correct(string) {
 function checkForFactor(base, factor) {
   return base % factor === 0;
 }
+
+// 129
+// Find numbers which are divisible by given number
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((num) => num % divisor === 0);
+}
