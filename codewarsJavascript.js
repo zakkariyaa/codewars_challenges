@@ -1258,3 +1258,9 @@ function checkForFactor(base, factor) {
 function divisibleBy(numbers, divisor) {
   return numbers.filter((num) => num % divisor === 0);
 }
+
+// 130
+// Parse nice int from char problem
+function getAge(inputString) {
+  return Number(inputString[0]);
+}
