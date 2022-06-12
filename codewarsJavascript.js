@@ -1264,3 +1264,21 @@ function divisibleBy(numbers, divisor) {
 function getAge(inputString) {
   return Number(inputString[0]);
 }
+
+// 131
+// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+String.prototype.toAlternatingCase = function () {
+  const words = this.split(' ');
+  return words
+    .map((word) => {
+      return word
+        .split('')
+        .map((char) => {
+          return char === char.toUpperCase()
+            ? char.toLowerCase()
+            : char.toUpperCase();
+        })
+        .join('');
+    })
+    .join(' ');
+};
