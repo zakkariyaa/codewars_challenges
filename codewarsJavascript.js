@@ -1347,3 +1347,11 @@ function greet(language) {
     ? languages[language]
     : languages['english'];
 }
+
+// 135
+// Volume of a Cuboid
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * height * width;
+  }
+}
