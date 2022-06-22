@@ -753,3 +753,8 @@ def past(h, m, s):
 # Convert a Boolean to a String
 def boolean_to_string(b):
     return 'True' if b else 'False'
+
+# 97
+# Mumbling
+def accum(s):
+    return '-'.join([(s[i] * (i + 1)).capitalize() for i in range(len(s))])
