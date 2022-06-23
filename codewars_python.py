@@ -758,3 +758,10 @@ def boolean_to_string(b):
 # Mumbling
 def accum(s):
     return '-'.join([(s[i] * (i + 1)).capitalize() for i in range(len(s))])
+
+# 98
+# You're a square!
+import math
+
+def is_square(n):
+    return False if n < 0 else math.sqrt(n) == math.ceil(math.sqrt(n))
