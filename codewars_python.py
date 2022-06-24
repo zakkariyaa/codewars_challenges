@@ -765,3 +765,8 @@ import math
 
 def is_square(n):
     return False if n < 0 else math.sqrt(n) == math.ceil(math.sqrt(n))
+
+# 99
+# Exes and Ohs
+def xo(s):
+    return s.lower().count('x') == s.lower().count('o')
