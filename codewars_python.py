@@ -770,3 +770,8 @@ def is_square(n):
 # Exes and Ohs
 def xo(s):
     return s.lower().count('x') == s.lower().count('o')
+
+# 100
+# Opposites Attract
+def lovefunc( flower1, flower2 ):
+    return (flower1 % 2 == 0 and flower2 % 2 != 0) or (flower1 % 2 != 0 and flower2 % 2 == 0)
