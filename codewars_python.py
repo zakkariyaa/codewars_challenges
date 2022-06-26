@@ -775,3 +775,8 @@ def xo(s):
 # Opposites Attract
 def lovefunc( flower1, flower2 ):
     return (flower1 % 2 == 0 and flower2 % 2 != 0) or (flower1 % 2 != 0 and flower2 % 2 == 0)
+
+# 101
+# Beginner Series #1 School Paperwork
+def paperwork(n, m):
+    return 0 if n < 0 or m < 0 else n * m
