@@ -785,3 +785,8 @@ def paperwork(n, m):
 # Fake Binary
 def fake_bin(x):
     return ''.join('0' if int(char) < 5 else '1' for char in x)
+
+# 103
+# How good are you really?
+def better_than_average(class_points, your_points):
+    return your_points > sum(class_points) / len(class_points)
