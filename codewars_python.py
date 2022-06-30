@@ -790,3 +790,8 @@ def fake_bin(x):
 # How good are you really?
 def better_than_average(class_points, your_points):
     return your_points > sum(class_points) / len(class_points)
+
+# 104
+# Reversed sequence
+def reverse_seq(n):
+    return [i for i in range(n, 0, -1)]
