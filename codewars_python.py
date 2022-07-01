@@ -795,3 +795,8 @@ def better_than_average(class_points, your_points):
 # Reversed sequence
 def reverse_seq(n):
     return [i for i in range(n, 0, -1)]
+
+# 105
+# Sum Arrays
+def sum_array(a):
+    return sum(a)
