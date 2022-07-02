@@ -800,3 +800,11 @@ def reverse_seq(n):
 # Sum Arrays
 def sum_array(a):
     return sum(a)
+
+# 106
+# Beginner - Reduce but Grow
+def grow(arr):
+    count = 1
+    for n in arr:
+        count *= n
+    return count
