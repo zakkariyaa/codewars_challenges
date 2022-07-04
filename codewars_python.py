@@ -808,3 +808,10 @@ def grow(arr):
     for n in arr:
         count *= n
     return count
+
+# 107
+# Jenny's secret message
+def greet(name):
+    if name == "Johnny":
+        return "Hello, my love!"
+    return "Hello, {name}!".format(name=name)
