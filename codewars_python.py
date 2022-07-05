@@ -815,3 +815,8 @@ def greet(name):
     if name == "Johnny":
         return "Hello, my love!"
     return "Hello, {name}!".format(name=name)
+
+# 108
+# Is he gonna survive?
+def hero(bullets, dragons):
+    return bullets >= dragons * 2
