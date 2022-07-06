@@ -820,3 +820,8 @@ def greet(name):
 # Is he gonna survive?
 def hero(bullets, dragons):
     return bullets >= dragons * 2
+
+# 109
+# Simple multiplication
+def simple_multiplication(number) :
+    return number * 8 if number % 2 == 0 else number * 9
