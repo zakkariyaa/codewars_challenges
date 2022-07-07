@@ -825,3 +825,8 @@ def hero(bullets, dragons):
 # Simple multiplication
 def simple_multiplication(number) :
     return number * 8 if number % 2 == 0 else number * 9
+
+# 110
+# MakeUpperCase
+def make_upper_case(s):
+    return s.upper()
