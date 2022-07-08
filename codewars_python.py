@@ -830,3 +830,8 @@ def simple_multiplication(number) :
 # MakeUpperCase
 def make_upper_case(s):
     return s.upper()
+
+# 111
+# Will you make it?
+def zero_fuel(distance_to_pump, mpg, fuel_left):
+    return mpg * fuel_left >= distance_to_pump
