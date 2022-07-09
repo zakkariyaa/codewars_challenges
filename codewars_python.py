@@ -835,3 +835,8 @@ def make_upper_case(s):
 # Will you make it?
 def zero_fuel(distance_to_pump, mpg, fuel_left):
     return mpg * fuel_left >= distance_to_pump
+
+# 112
+# DNA to RNA Conversion
+def dna_to_rna(dna):
+    return dna.replace('T', 'U')
