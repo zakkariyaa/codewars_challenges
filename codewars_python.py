@@ -1,5 +1,6 @@
 # 1
 # Credit Card Mask
+from math import floor
 from math import ceil
 from string import digits
 from string import digits as d
@@ -728,3 +729,9 @@ def century(year):
 # Is n divisible by x and y?
 def is_divisible(n, x, y):
     return n % x == 0 and n % y == 0
+
+
+# 93
+# Keep Hydrated!
+def litres(time):
+    return floor(0.5 * time)
