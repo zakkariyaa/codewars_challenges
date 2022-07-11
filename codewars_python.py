@@ -735,3 +735,9 @@ def is_divisible(n, x, y):
 # Keep Hydrated!
 def litres(time):
     return floor(0.5 * time)
+
+
+# 94
+# Beginner - Lost Without a Map
+def maps(a):
+    return [el * 2 for el in a]
