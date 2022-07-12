@@ -741,3 +741,9 @@ def litres(time):
 # Beginner - Lost Without a Map
 def maps(a):
     return [el * 2 for el in a]
+
+
+# 95
+# Beginner Series #2 Clock
+def past(h, m, s):
+    return ((h * 3600) + (m * 60) + s) * 1000
