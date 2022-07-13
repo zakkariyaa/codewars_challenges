@@ -747,3 +747,9 @@ def maps(a):
 # Beginner Series #2 Clock
 def past(h, m, s):
     return ((h * 3600) + (m * 60) + s) * 1000
+
+
+# 96
+# Convert a Boolean to a String
+def boolean_to_string(b):
+    return 'True' if b else 'False'
