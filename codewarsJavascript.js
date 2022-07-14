@@ -1186,3 +1186,10 @@ function removeEveryOther(arr) {
 function updateLight(current) {
   return current === 'yellow' ? 'red' : current === 'red' ? 'green' : 'yellow'
 }
+
+
+// 122
+// Will there be enough space?
+function enough(cap, on, wait) {
+  return wait - (cap - on) < 0 ? 0 : wait - (cap - on)
+}
