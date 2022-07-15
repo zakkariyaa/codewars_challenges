@@ -1179,3 +1179,10 @@ function removeEveryOther(arr) {
     return idx % 2 === 0 ? el : null
   })
 }
+
+
+// 121
+// Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+  return current === 'yellow' ? 'red' : current === 'red' ? 'green' : 'yellow'
+}
