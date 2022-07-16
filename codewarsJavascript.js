@@ -1170,3 +1170,12 @@ function past(h, m, s) {
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, 'U')
 }
+
+
+// 120
+// Removing Elements
+function removeEveryOther(arr) {
+  return arr.filter((el, idx) => {
+    return idx % 2 === 0 ? el : null
+  })
+}
