@@ -1163,3 +1163,10 @@ function past(h, m, s) {
   const allSeconds = (h * 3600) + (m * 60) + s
   return allSeconds * 1000
 }
+
+
+// 119
+// DNA to RNA Conversion
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U')
+}
