@@ -1140,3 +1140,26 @@ function feast(beast, dish) {
 function doubleChar(str) {
   return str.split('').map(char => char.repeat(2)).join('')
 }
+
+
+// 117
+// Basic Mathematical Operations
+const basicOp = (operation, value1, value2) => {
+  if (operation === '+') {
+    return value1 + value2
+  } else if (operation === '-') {
+    return value1 - value2
+  } else if (operation === '*') {
+    return value1 * value2
+  } else if (operation === '/') {
+    return value1 / value2
+  }
+}
+
+
+// 118
+// Beginner Series #2 Clock
+function past(h, m, s) {
+  const allSeconds = (h * 3600) + (m * 60) + s
+  return allSeconds * 1000
+}
