@@ -1140,3 +1140,18 @@ function feast(beast, dish) {
 function doubleChar(str) {
   return str.split('').map(char => char.repeat(2)).join('')
 }
+
+
+// 117
+// Basic Mathematical Operations
+const basicOp = (operation, value1, value2) => {
+  if (operation === '+') {
+    return value1 + value2
+  } else if (operation === '-') {
+    return value1 - value2
+  } else if (operation === '*') {
+    return value1 * value2
+  } else if (operation === '/') {
+    return value1 / value2
+  }
+}
