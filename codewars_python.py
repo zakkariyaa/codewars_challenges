@@ -1,5 +1,6 @@
 # 1
 # Credit Card Mask
+from math import ceil
 from string import digits
 from string import digits as d
 from string import ascii_uppercase as l, ascii_lowercase as u, digits as d
@@ -715,3 +716,9 @@ def are_you_playing_banjo(name):
 # Counting sheep...
 def count_sheeps(sheep):
     return sheep.count(True)
+
+
+# 91
+# Century From Year
+def century(year):
+    return ceil(year / 100)
