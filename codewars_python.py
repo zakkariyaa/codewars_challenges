@@ -722,3 +722,9 @@ def count_sheeps(sheep):
 # Century From Year
 def century(year):
     return ceil(year / 100)
+
+
+# 92
+# Is n divisible by x and y?
+def is_divisible(n, x, y):
+    return n % x == 0 and n % y == 0
