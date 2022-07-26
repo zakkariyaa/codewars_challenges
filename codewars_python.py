@@ -709,3 +709,9 @@ def disemvowel(string_):
 # Are You Playing Banjo?
 def are_you_playing_banjo(name):
     return f'{name} plays banjo' if name[0] == 'r' or name[0] == 'R' else f'{name} does not play banjo'
+
+
+# 90
+# Counting sheep...
+def count_sheeps(sheep):
+    return sheep.count(True)
