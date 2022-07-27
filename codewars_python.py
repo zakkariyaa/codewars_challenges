@@ -840,3 +840,8 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
 # DNA to RNA Conversion
 def dna_to_rna(dna):
     return dna.replace('T', 'U')
+
+# 113
+# Array plus array
+def array_plus_array(arr1,arr2):
+    return sum(arr1 + arr2)
