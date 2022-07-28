@@ -845,3 +845,8 @@ def dna_to_rna(dna):
 # Array plus array
 def array_plus_array(arr1,arr2):
     return sum(arr1 + arr2)
+
+# 114
+# If you can't sleep, just count sheep!!
+def count_sheep(n):
+    return ''.join(f'{i + 1} sheep...' for i in range(0, n))
