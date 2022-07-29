@@ -850,3 +850,10 @@ def array_plus_array(arr1,arr2):
 # If you can't sleep, just count sheep!!
 def count_sheep(n):
     return ''.join(f'{i + 1} sheep...' for i in range(0, n))
+
+# 115
+# Get the mean of an array
+import math
+
+def get_average(marks):
+    return math.floor(sum(marks) / len(marks))
