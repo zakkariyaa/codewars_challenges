@@ -857,3 +857,19 @@ import math
 
 def get_average(marks):
     return math.floor(sum(marks) / len(marks))
+
+# 116
+# Find Maximum and Minimum Values of a List
+def minimum(arr):
+    min = arr[0]
+    for num in arr:
+        if num < min:
+            min = num
+    return min
+
+def maximum(arr):
+    max = arr[0]
+    for num in arr:
+        if num > max:
+            max = num
+    return max
