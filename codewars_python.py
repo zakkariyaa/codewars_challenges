@@ -878,3 +878,8 @@ def maximum(arr):
 # Count by X
 def count_by(x, n):
     return [x * i for i in range(1, n + 1)]
+
+# 118
+# Sentence Smash
+def smash(words):
+    return " ".join(words)
