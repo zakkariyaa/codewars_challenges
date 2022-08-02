@@ -883,3 +883,8 @@ def count_by(x, n):
 # Sentence Smash
 def smash(words):
     return " ".join(words)
+
+# 119
+# Sum without highest and lowest number
+def sum_array(arr):
+    return sum(sorted(arr)[1:len(arr) - 1]) if arr else 0
