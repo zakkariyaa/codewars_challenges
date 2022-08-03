@@ -888,3 +888,8 @@ def smash(words):
 # Sum without highest and lowest number
 def sum_array(arr):
     return sum(sorted(arr)[1:len(arr) - 1]) if arr else 0
+
+# 120
+# Count the Monkeys!
+def monkey_count(n):
+    return [i for i in range(1, n + 1)]
