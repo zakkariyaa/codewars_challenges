@@ -893,3 +893,8 @@ def sum_array(arr):
 # Count the Monkeys!
 def monkey_count(n):
     return [i for i in range(1, n + 1)]
+
+# 121
+# Do I get a bonus?
+def bonus_time(salary, bonus):
+    return f'${salary * 10}' if bonus else f'${salary}'
