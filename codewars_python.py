@@ -898,3 +898,19 @@ def monkey_count(n):
 # Do I get a bonus?
 def bonus_time(salary, bonus):
     return f'${salary * 10}' if bonus else f'${salary}'
+
+# 122
+# Total amount of points
+def points(games):
+    p = 0
+
+    for game in games:
+        scores = game.split(':')
+        if scores[0] > scores[1]:
+            p += 3
+        elif scores[0] < scores[1]:
+            p += 0
+        else:
+            p += 1
+
+    return p
