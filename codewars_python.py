@@ -914,3 +914,8 @@ def points(games):
             p += 1
 
     return p
+
+# 123
+# Convert a string to an array
+def string_to_array(s):
+    return s.split(' ')
