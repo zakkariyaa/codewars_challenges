@@ -1363,3 +1363,17 @@ function squareOrSquareRoot(array) {
     Number.isInteger(Math.sqrt(num)) ? Math.sqrt(num) : num ** 2
   );
 }
+
+// 137
+// I love you, a little , a lot, passionately ... not at all
+function howMuchILoveYou(nbPetals) {
+  words = [
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+    'not at all',
+  ];
+  return words[(nbPetals - 1) % words.length];
+}
