@@ -1395,3 +1395,9 @@ function isPalindrome(x) {
 function sumStr(a, b) {
   return String(Number(a) + Number(b));
 }
+
+// 141
+// Difference of Volumes of Cuboids
+function findDifference(a, b) {
+  return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
+}
