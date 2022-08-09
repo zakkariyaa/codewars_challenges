@@ -1401,3 +1401,9 @@ function sumStr(a, b) {
 function findDifference(a, b) {
   return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
 }
+
+// 142
+// Is it even?
+function testEven(n) {
+  return n % 2 === 0;
+}
