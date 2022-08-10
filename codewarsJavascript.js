@@ -1407,3 +1407,9 @@ function findDifference(a, b) {
 function testEven(n) {
   return n % 2 === 0;
 }
+
+// 143
+// Grasshopper - Messi goals function
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
