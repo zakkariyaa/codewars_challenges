@@ -1425,3 +1425,10 @@ function createArray(number) {
 
   return newArray;
 }
+
+// 145
+// Filter out the geese
+function gooseFilter(birds) {
+  var geese = ['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'];
+  return birds.filter((el) => !geese.includes(el));
+}
