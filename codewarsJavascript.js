@@ -1432,3 +1432,14 @@ function gooseFilter(birds) {
   var geese = ['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'];
   return birds.filter((el) => !geese.includes(el));
 }
+
+// 146
+// What is between?
+function between(a, b) {
+  const range = [];
+  for (let i = a; i <= b; i++) {
+    range.push(i);
+  }
+
+  return range;
+}
