@@ -1443,3 +1443,16 @@ function between(a, b) {
 
   return range;
 }
+
+// 147
+// Well of Ideas - Easy Version
+function well(x) {
+  const count = x.filter((el) => el === 'good');
+  if (count.length === 1 || count.length === 2) {
+    return 'Publish!';
+  } else if (count.length > 2) {
+    return 'I smell a series!';
+  } else {
+    return 'Fail!';
+  }
+}
