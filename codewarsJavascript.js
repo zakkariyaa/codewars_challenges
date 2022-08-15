@@ -1456,3 +1456,9 @@ function well(x) {
     return 'Fail!';
   }
 }
+
+// 148
+// N-th Power
+function index(array, n) {
+  return array[n] ? array[n] ** n : -1;
+}
