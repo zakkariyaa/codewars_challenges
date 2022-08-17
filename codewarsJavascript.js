@@ -1468,3 +1468,9 @@ function index(array, n) {
 function fixTheMeerkat(arr) {
   return [arr[2], arr[1], arr[0]];
 }
+
+// 150
+// Grasshopper - Terminal game move function
+function move(position, roll) {
+  return roll * 2 + position;
+}
