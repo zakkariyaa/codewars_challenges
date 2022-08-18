@@ -1474,3 +1474,9 @@ function fixTheMeerkat(arr) {
 function move(position, roll) {
   return roll * 2 + position;
 }
+
+// 151
+// Is the string uppercase?
+String.prototype.isUpperCase = function () {
+  return this.valueOf() === this.valueOf().toUpperCase();
+};
