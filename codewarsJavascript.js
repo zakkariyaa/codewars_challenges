@@ -1480,3 +1480,9 @@ function move(position, roll) {
 String.prototype.isUpperCase = function () {
   return this.valueOf() === this.valueOf().toUpperCase();
 };
+
+// 152
+// Grasshopper - If/else syntax debug
+function checkAlive(health) {
+  return health > 0;
+}
