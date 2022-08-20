@@ -1486,3 +1486,9 @@ String.prototype.isUpperCase = function () {
 function checkAlive(health) {
   return health > 0;
 }
+
+// 153
+// Grasshopper - Debug sayHello
+function sayHello(name) {
+  return `Hello, ${name}`;
+}
