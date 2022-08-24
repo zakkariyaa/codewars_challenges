@@ -1003,3 +1003,8 @@ def double_char(s):
 # Twice as old
 def twice_as_old(dad_years_old, son_years_old):
     return abs(dad_years_old - (son_years_old * 2))
+
+# 137
+# Removing Elements
+def remove_every_other(my_list):
+    return [my_list[i] for i in range(len(my_list)) if i % 2 == 0]
