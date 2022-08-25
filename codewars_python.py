@@ -1008,3 +1008,18 @@ def twice_as_old(dad_years_old, son_years_old):
 # Removing Elements
 def remove_every_other(my_list):
     return [my_list[i] for i in range(len(my_list)) if i % 2 == 0]
+
+# 138
+# Get Planet Name By ID
+def get_planet_name(id):
+    planets = {
+        1: "Mercury",
+        2: "Venus",
+        3: "Earth",
+        4: "Mars",
+        5: "Jupiter",
+        6: "Saturn",
+        7: "Uranus",
+        8: "Neptune",
+    }
+    return planets[id]
