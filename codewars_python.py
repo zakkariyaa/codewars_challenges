@@ -1023,3 +1023,8 @@ def get_planet_name(id):
         8: "Neptune",
     }
     return planets[id]
+
+# 139
+# Will there be enough space?
+def enough(cap, on, wait):
+    return 0 if cap - on >= wait else abs(cap - on - wait)
