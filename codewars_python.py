@@ -1028,3 +1028,10 @@ def get_planet_name(id):
 # Will there be enough space?
 def enough(cap, on, wait):
     return 0 if cap - on >= wait else abs(cap - on - wait)
+
+# 140
+# Beginner Series #4 Cockroach
+from math import floor
+
+def cockroach_speed(s):
+    return floor(s / 0.036)
