@@ -1035,3 +1035,8 @@ from math import floor
 
 def cockroach_speed(s):
     return floor(s / 0.036)
+
+# 141
+# Keep up the hoop
+def hoop_count(n):
+    return "Great, now move on to tricks" if n >= 10 else "Keep at it until you get it"
