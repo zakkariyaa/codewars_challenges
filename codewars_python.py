@@ -1040,3 +1040,8 @@ def cockroach_speed(s):
 # Keep up the hoop
 def hoop_count(n):
     return "Great, now move on to tricks" if n >= 10 else "Keep at it until you get it"
+
+# 142
+# Correct the mistakes of the character recognition software
+def correct(s):
+    return s.replace('5', 'S').replace('0', 'O').replace('1', 'I')
