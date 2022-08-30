@@ -1045,3 +1045,8 @@ def hoop_count(n):
 # Correct the mistakes of the character recognition software
 def correct(s):
     return s.replace('5', 'S').replace('0', 'O').replace('1', 'I')
+
+# 143
+# Third Angle of a Triangle
+def other_angle(a, b):
+    return 180 - (a + b)
