@@ -1050,3 +1050,8 @@ def correct(s):
 # Third Angle of a Triangle
 def other_angle(a, b):
     return 180 - (a + b)
+
+# 144
+# Grasshopper - Check for factor
+def check_for_factor(base, factor):
+    return base % factor == 0
