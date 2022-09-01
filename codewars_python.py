@@ -1055,3 +1055,10 @@ def other_angle(a, b):
 # Grasshopper - Check for factor
 def check_for_factor(base, factor):
     return base % factor == 0
+
+# 145
+# Count Odd Numbers below n
+import math
+
+def odd_count(n):
+    return math.floor(n / 2)
