@@ -1067,3 +1067,8 @@ def odd_count(n):
 # Find numbers which are divisible by given number
 def divisible_by(numbers, divisor):
     return [num for num in numbers if num % divisor == 0]
+
+# 147
+# Parse nice int from char problem
+def get_age(age):
+    return int(age[0])
