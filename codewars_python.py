@@ -1072,3 +1072,8 @@ def divisible_by(numbers, divisor):
 # Parse nice int from char problem
 def get_age(age):
     return int(age[0])
+
+# 148
+# All Star Code Challenge #18
+def str_count(strng, letter):
+    return strng.count(letter)
