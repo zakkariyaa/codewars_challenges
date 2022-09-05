@@ -1077,3 +1077,8 @@ def get_age(age):
 # All Star Code Challenge #18
 def str_count(strng, letter):
     return strng.count(letter)
+
+# 149
+# altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+def to_alternating_case(string):
+    return ''.join(char.upper() if char == char.lower() else char.lower() for char in list(string))
