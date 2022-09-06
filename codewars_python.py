@@ -1082,3 +1082,27 @@ def str_count(strng, letter):
 # altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 def to_alternating_case(string):
     return ''.join(char.upper() if char == char.lower() else char.lower() for char in list(string))
+
+# 150
+# Welcome!
+def greet(language):
+    languages = {
+        'english': 'Welcome',
+        'czech': 'Vitejte',
+        'danish': 'Velkomst',
+        'dutch': 'Welkom',
+        'estonian': 'Tere tulemast',
+        'finnish': 'Tervetuloa',
+        'flemish': 'Welgekomen',
+        'french': 'Bienvenue',
+        'german': 'Willkommen',
+        'irish': 'Failte',
+        'italian': 'Benvenuto',
+        'latvian': 'Gaidits',
+        'lithuanian': 'Laukiamas',
+        'polish': 'Witamy',
+        'spanish': 'Bienvenido',
+        'swedish': 'Valkommen',
+        'welsh': 'Croeso'
+        }
+    return languages[language] if language in languages.keys() else languages['english']
