@@ -1106,3 +1106,8 @@ def greet(language):
         'welsh': 'Croeso'
         }
     return languages[language] if language in languages.keys() else languages['english']
+
+# 151
+# Volume of a Cuboid
+def get_volume_of_cuboid(length, width, height):
+    return length * width * height
