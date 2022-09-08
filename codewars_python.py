@@ -1111,3 +1111,10 @@ def greet(language):
 # Volume of a Cuboid
 def get_volume_of_cuboid(length, width, height):
     return length * width * height
+
+# 152
+# To square(root) or not to square(root)
+import math
+
+def square_or_square_root(arr):
+    return [math.sqrt(num) if math.sqrt(num).is_integer() else num ** 2 for num in arr]
