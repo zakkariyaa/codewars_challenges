@@ -1118,3 +1118,8 @@ import math
 
 def square_or_square_root(arr):
     return [math.sqrt(num) if math.sqrt(num).is_integer() else num ** 2 for num in arr]
+
+# 153
+# Powers of 2
+def powers_of_two(n):
+    return [2 ** i for i in range(0, n + 1)]
