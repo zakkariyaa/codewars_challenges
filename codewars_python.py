@@ -1123,3 +1123,17 @@ def square_or_square_root(arr):
 # Powers of 2
 def powers_of_two(n):
     return [2 ** i for i in range(0, n + 1)]
+
+# 154
+# I love you, a little , a lot, passionately ... not at all
+def how_much_i_love_you(nb_petals):
+    words = [
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+    'not at all',
+    ];
+
+    return words[(nb_petals - 1) % len(words)]

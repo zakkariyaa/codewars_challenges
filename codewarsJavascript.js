@@ -1367,7 +1367,7 @@ function squareOrSquareRoot(array) {
 // 137
 // I love you, a little , a lot, passionately ... not at all
 function howMuchILoveYou(nbPetals) {
-  words = [
+  const words = [
     'I love you',
     'a little',
     'a lot',
