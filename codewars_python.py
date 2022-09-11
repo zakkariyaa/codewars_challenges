@@ -1137,3 +1137,8 @@ def how_much_i_love_you(nb_petals):
     ];
 
     return words[(nb_petals - 1) % len(words)]
+
+# 155
+# Sort and Star
+def two_sort(array):
+    return '***'.join(list(sorted(array)[0]))
