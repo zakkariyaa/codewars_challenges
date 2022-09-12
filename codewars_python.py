@@ -1142,3 +1142,8 @@ def how_much_i_love_you(nb_petals):
 # Sort and Star
 def two_sort(array):
     return '***'.join(list(sorted(array)[0]))
+
+# 156
+# Is it a palindrome?
+def is_palindrome(s):
+    return s.lower() == s.lower()[::-1]
