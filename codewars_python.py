@@ -1147,3 +1147,10 @@ def two_sort(array):
 # Is it a palindrome?
 def is_palindrome(s):
     return s.lower() == s.lower()[::-1]
+
+# 157
+# Sum The Strings
+def sum_str(a, b):
+    num1 = int(a) if a else 0
+    num2 = int(b) if b else 0
+    return str(num1 + num2)
