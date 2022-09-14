@@ -1154,3 +1154,13 @@ def sum_str(a, b):
     num1 = int(a) if a else 0
     num2 = int(b) if b else 0
     return str(num1 + num2)
+
+# 158
+# Difference of Volumes of Cuboids
+def find_difference(a, b):
+    num1 = 1
+    num2 = 1
+    for num in a: num1 *= num
+    for num in b: num2 *= num
+
+    return abs(num1 - num2)
