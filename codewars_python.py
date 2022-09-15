@@ -1164,3 +1164,8 @@ def find_difference(a, b):
     for num in b: num2 *= num
 
     return abs(num1 - num2)
+
+# 159
+# Is it even?
+def is_even(n):
+    return n % 2 == 0
