@@ -1169,3 +1169,8 @@ def find_difference(a, b):
 # Is it even?
 def is_even(n):
     return n % 2 == 0
+
+# 160
+# Grasshopper - Messi goals function
+def goals(laLiga, copaDelRey, championsLeague):
+    return laLiga + copaDelRey + championsLeague
