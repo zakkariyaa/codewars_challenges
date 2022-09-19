@@ -1184,3 +1184,9 @@ def create_array(n):
         res+=[i]
         i += 1
     return res
+
+# 162
+# Filter out the geese
+geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+def goose_filter(birds):
+    return [el for el in birds if el not in geese]
