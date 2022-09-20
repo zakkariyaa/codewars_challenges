@@ -1190,3 +1190,9 @@ def create_array(n):
 geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
 def goose_filter(birds):
     return [el for el in birds if el not in geese]
+
+# 163
+# Reverse List Order
+def reverse_list(l):
+    l.reverse()
+    return l
