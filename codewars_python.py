@@ -1196,3 +1196,8 @@ def goose_filter(birds):
 def reverse_list(l):
     l.reverse()
     return l
+
+# 164
+# Generate range of integers
+def generate_range(min, max, step):
+    return [i for i in range(min, max + 1, step)]
