@@ -1201,3 +1201,8 @@ def reverse_list(l):
 # Generate range of integers
 def generate_range(min, max, step):
     return [i for i in range(min, max + 1, step)]
+
+# 165
+# Lario and Muigi Pipe Problem
+def pipe_fix(nums):
+    return [i for i in range(nums[0], nums[-1] + 1)]
