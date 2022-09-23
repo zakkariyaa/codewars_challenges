@@ -1206,3 +1206,8 @@ def generate_range(min, max, step):
 # Lario and Muigi Pipe Problem
 def pipe_fix(nums):
     return [i for i in range(nums[0], nums[-1] + 1)]
+
+# 166
+# Capitalization and Mutability
+def capitalize_word(word):
+    return word.capitalize()
