@@ -1224,3 +1224,8 @@ def how_many_dalmatians(n):
         return dogs[3]
     else:
         return dogs[2]
+
+# 168
+# Grasshopper - Terminal game combat function
+def combat(health, damage):
+    return health - damage if health - damage > 0 else 0
