@@ -1229,3 +1229,8 @@ def how_many_dalmatians(n):
 # Grasshopper - Terminal game combat function
 def combat(health, damage):
     return health - damage if health - damage > 0 else 0
+
+# 169
+# Exclamation marks series #1: Remove an exclamation mark from the end of string
+def remove(s):
+    return s[:-1] if s and s[-1] == '!' else s
