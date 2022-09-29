@@ -1240,3 +1240,8 @@ def remove(s):
 a = "code"
 b = "wa.rs"
 name = a + b
+
+# 171
+# The Wide-Mouthed frog!
+def mouth_size(animal):
+    return 'small' if animal.lower() == 'alligator' else 'wide'
