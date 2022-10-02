@@ -1377,3 +1377,9 @@ function howMuchILoveYou(nbPetals) {
   ];
   return words[(nbPetals - 1) % words.length];
 }
+
+// 138
+// Sort and Star
+function twoSort(s) {
+  return s.sort()[0].split('').join('***');
+}
