@@ -1383,3 +1383,9 @@ function howMuchILoveYou(nbPetals) {
 function twoSort(s) {
   return s.sort()[0].split('').join('***');
 }
+
+// 139
+// Is it a palindrome?
+function isPalindrome(x) {
+  return x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
+}
