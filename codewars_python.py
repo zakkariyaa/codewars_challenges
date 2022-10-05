@@ -998,3 +998,8 @@ def update_light(current):
 # Double Char
 def double_char(s):
     return ''.join(char * 2 for char in list(s))
+
+# 136
+# Twice as old
+def twice_as_old(dad_years_old, son_years_old):
+    return abs(dad_years_old - (son_years_old * 2))
