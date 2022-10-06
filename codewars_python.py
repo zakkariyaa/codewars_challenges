@@ -993,3 +993,8 @@ def set_alarm(employed, vacation):
 def update_light(current):
     states = ['green', 'yellow', 'red']
     return states[(states.index(current) + 1) % len(states)]
+
+# 135
+# Double Char
+def double_char(s):
+    return ''.join(char * 2 for char in list(s))
