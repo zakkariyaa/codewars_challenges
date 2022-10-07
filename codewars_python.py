@@ -987,3 +987,9 @@ def remove_exclamation_marks(s):
 # L1: Set Alarm
 def set_alarm(employed, vacation):
     return True if employed and not vacation else False
+
+# 134
+# Thinkful - Logic Drills: Traffic light
+def update_light(current):
+    states = ['green', 'yellow', 'red']
+    return states[(states.index(current) + 1) % len(states)]
