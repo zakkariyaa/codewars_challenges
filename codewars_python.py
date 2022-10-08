@@ -982,3 +982,8 @@ def rental_car_cost(d):
 # Remove exclamation marks
 def remove_exclamation_marks(s):
     return s.replace('!', '')
+
+# 133
+# L1: Set Alarm
+def set_alarm(employed, vacation):
+    return True if employed and not vacation else False
