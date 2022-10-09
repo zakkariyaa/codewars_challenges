@@ -977,3 +977,8 @@ def rental_car_cost(d):
         return (d * 40) - 20
     else:
         return d * 40
+
+# 132
+# Remove exclamation marks
+def remove_exclamation_marks(s):
+    return s.replace('!', '')
