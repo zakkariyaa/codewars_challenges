@@ -967,3 +967,13 @@ def rps(p1, p2):
     if beats[p2] == p1:
         return "Player 2 won!"
     return "Draw!"
+
+# 131
+# Transportation on vacation
+def rental_car_cost(d):
+    if d >= 7:
+        return (d * 40) - 50
+    elif d > 3:
+        return (d * 40) - 20
+    else:
+        return d * 40
