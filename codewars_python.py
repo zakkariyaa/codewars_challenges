@@ -952,3 +952,8 @@ def area_or_perimeter(l, w):
 # Grasshopper - Personalized Message
 def greet(name, owner):
     return 'Hello boss' if name == owner else 'Hello guest'
+
+# 129
+# The Feast of Many Beasts
+def feast(beast, dish):
+    return beast[0] == dish[0] and beast[-1] == dish[-1]
