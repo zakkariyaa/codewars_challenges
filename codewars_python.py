@@ -947,3 +947,8 @@ def sum_mix(arr):
 # Area or Perimeter
 def area_or_perimeter(l, w):
     return l ** 2 if l == w else 2 * (l + w)
+
+# 128
+# Grasshopper - Personalized Message
+def greet(name, owner):
+    return 'Hello boss' if name == owner else 'Hello guest'
