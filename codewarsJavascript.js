@@ -1355,3 +1355,11 @@ class Kata {
     return length * height * width;
   }
 }
+
+// 136
+// To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+  return array.map((num) =>
+    Number.isInteger(Math.sqrt(num)) ? Math.sqrt(num) : num ** 2
+  );
+}
