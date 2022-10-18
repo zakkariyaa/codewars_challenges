@@ -1389,3 +1389,9 @@ function twoSort(s) {
 function isPalindrome(x) {
   return x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
 }
+
+// 140
+// Sum The Strings
+function sumStr(a, b) {
+  return String(Number(a) + Number(b));
+}
