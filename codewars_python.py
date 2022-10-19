@@ -942,3 +942,8 @@ def double_integer(i):
 # Sum Mixed Array
 def sum_mix(arr):
     return sum(int(num) for num in arr)
+
+# 127
+# Area or Perimeter
+def area_or_perimeter(l, w):
+    return l ** 2 if l == w else 2 * (l + w)
