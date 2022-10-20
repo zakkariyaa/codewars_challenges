@@ -937,3 +937,8 @@ def bmi(weight, height):
 # You Can't Code Under Pressure #1
 def double_integer(i):
     return i * 2
+
+# 126
+# Sum Mixed Array
+def sum_mix(arr):
+    return sum(int(num) for num in arr)
