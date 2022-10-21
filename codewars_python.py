@@ -932,3 +932,8 @@ def bmi(weight, height):
         return "Overweight"
     elif result > 30:
         return "Obese"
+
+# 125
+# You Can't Code Under Pressure #1
+def double_integer(i):
+    return i * 2
