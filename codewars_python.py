@@ -919,3 +919,16 @@ def points(games):
 # Convert a string to an array
 def string_to_array(s):
     return s.split(' ')
+
+# 124
+# Calculate BMI
+def bmi(weight, height):
+    result = weight / (height ** 2)
+    if result <= 18.5:
+        return "Underweight"
+    elif result <= 25.0:
+        return "Normal"
+    elif result <= 30.0:
+        return "Overweight"
+    elif result > 30:
+        return "Obese"
