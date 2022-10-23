@@ -1245,3 +1245,8 @@ name = a + b
 # The Wide-Mouthed frog!
 def mouth_size(animal):
     return 'small' if animal.lower() == 'alligator' else 'wide'
+
+# 172
+# Vowel remover
+def shortcut(s):
+    return ''.join(char for char in list(s) if char not in 'aeiou')
