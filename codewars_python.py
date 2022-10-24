@@ -1250,3 +1250,9 @@ def mouth_size(animal):
 # Vowel remover
 def shortcut(s):
     return ''.join(char for char in list(s) if char not in 'aeiou')
+
+
+# 173
+# Jaden Casing Strings
+def to_jaden_case(string):
+    return ' '.join(word.capitalize() for word in string.split(' '))
