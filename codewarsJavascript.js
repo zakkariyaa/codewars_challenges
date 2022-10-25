@@ -1492,3 +1492,9 @@ function checkAlive(health) {
 function sayHello(name) {
   return `Hello, ${name}`;
 }
+
+// 154
+// You're a square!
+var isSquare = function (n) {
+  return Number.isInteger(Math.sqrt(n));
+};
