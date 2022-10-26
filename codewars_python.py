@@ -1256,3 +1256,9 @@ def shortcut(s):
 # Jaden Casing Strings
 def to_jaden_case(string):
     return ' '.join(word.capitalize() for word in string.split(' '))
+
+
+# 174
+# Complementary DNA
+def DNA_strand(dna):
+    return dna.translate(dna.maketrans('ATCG', 'TAGC'))
