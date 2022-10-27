@@ -1272,3 +1272,9 @@ def maskify(cc):
 # Sum of two lowest positive integers
 def sum_two_smallest_numbers(numbers):
     return sorted(numbers)[0] + sorted(numbers)[1]
+
+# 177
+# Beginner Series #3 Sum of Numbers
+def get_sum(a,b):
+    nums = sorted([a, b])
+    return sum(i for i in range(nums[0], nums[1] + 1))
