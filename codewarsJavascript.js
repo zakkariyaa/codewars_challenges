@@ -1498,3 +1498,10 @@ function sayHello(name) {
 var isSquare = function (n) {
   return Number.isInteger(Math.sqrt(n));
 };
+
+// 155
+// Isograms
+function isIsogram(str) {
+  const newStr = str.toLowerCase();
+  return Array.from(new Set(newStr)).join('') === newStr;
+}
