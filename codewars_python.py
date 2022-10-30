@@ -1278,3 +1278,8 @@ def sum_two_smallest_numbers(numbers):
 def get_sum(a,b):
     nums = sorted([a, b])
     return sum(i for i in range(nums[0], nums[1] + 1))
+
+# 178
+# Friend or Foe?
+def friend(x):
+    return [name for name in x if len(name) == 4]
