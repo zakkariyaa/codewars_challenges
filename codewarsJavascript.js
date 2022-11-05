@@ -1505,3 +1505,19 @@ function isIsogram(str) {
   const newStr = str.toLowerCase();
   return Array.from(new Set(newStr)).join('') === newStr;
 }
+
+// 156
+// Beginner Series #3 Sum of Numbers
+function getSum(...args) {
+  let sum = 0;
+  const sorted = args.sort((a, b) => a - b);
+  if (sorted[0] === sorted[1]) {
+    return sorted[0];
+  } else {
+    for (let i = sorted[0]; i <= sorted[1]; i++) {
+      sum += i;
+    }
+  }
+
+  return sum;
+}
