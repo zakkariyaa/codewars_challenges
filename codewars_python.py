@@ -1283,3 +1283,8 @@ def get_sum(a,b):
 # Friend or Foe?
 def friend(x):
     return [name for name in x if len(name) == 4]
+
+# 179
+# Categorize New Member
+def open_or_senior(data):
+    return ['Senior' if p[0] >= 55 and p[1] > 7 else 'Open' for p in data]
