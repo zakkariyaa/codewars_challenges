@@ -1521,3 +1521,9 @@ function getSum(...args) {
 
   return sum;
 }
+
+// 157
+// The highest profit wins!
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
