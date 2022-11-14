@@ -1527,3 +1527,9 @@ function getSum(...args) {
 function minMax(arr) {
   return [Math.min(...arr), Math.max(...arr)];
 }
+
+// 158
+// Testing 1-2-3
+var number = function (array) {
+  return array.map((el, idx) => `${idx + 1}: ${el}`);
+};
