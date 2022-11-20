@@ -1533,3 +1533,14 @@ function minMax(arr) {
 var number = function (array) {
   return array.map((el, idx) => `${idx + 1}: ${el}`);
 };
+
+// 159
+// Don't give me five!
+function dontGiveMeFive(start, end) {
+  let count = 0;
+  for (let i = start; i <= end; i++) {
+    String(i).split('').includes('5') ? null : (count += 1);
+  }
+
+  return count;
+}
