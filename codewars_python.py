@@ -1294,3 +1294,12 @@ def open_or_senior(data):
 def printer_error(s):
     errors = 'nopqrstuvwxyz'
     return f'{len([char for char in s if char in errors])}/{len(s)}'
+
+# 181
+# Regex validate PIN code
+def validate_pin(pin):
+    check_length = len(pin) == 4 or len(pin) == 6
+    digits = [char for char in pin if char.isnumeric()]
+    check_digits = len(digits) == 4 or len(digits) == 6
+
+    return check_length and check_digits
