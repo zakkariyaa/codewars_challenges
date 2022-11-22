@@ -1288,3 +1288,9 @@ def friend(x):
 # Categorize New Member
 def open_or_senior(data):
     return ['Senior' if p[0] >= 55 and p[1] > 7 else 'Open' for p in data]
+
+# 180
+# Printer Errors
+def printer_error(s):
+    errors = 'nopqrstuvwxyz'
+    return f'{len([char for char in s if char in errors])}/{len(s)}'
