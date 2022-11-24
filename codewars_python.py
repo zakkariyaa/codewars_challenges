@@ -1303,3 +1303,8 @@ def validate_pin(pin):
     check_digits = len(digits) == 4 or len(digits) == 6
 
     return check_length and check_digits
+
+# 182
+# Binary Addition
+def add_binary(a,b):
+    return bin(a + b)[2:]
