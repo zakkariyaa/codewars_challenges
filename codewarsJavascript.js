@@ -1544,3 +1544,19 @@ function dontGiveMeFive(start, end) {
 
   return count;
 }
+
+// 160
+// Growth of a Population
+function nbYear(p0, percent, aug, p) {
+  const newPercent = percent / 100;
+  let newPopulation = p0;
+
+  for (let i = 1; i <= p; i++) {
+    newPopulation = Math.trunc(
+      newPopulation + newPopulation * newPercent + aug
+    );
+    if (Math.trunc(newPopulation) >= p) {
+      return i;
+    }
+  }
+}
