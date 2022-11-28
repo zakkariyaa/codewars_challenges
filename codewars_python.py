@@ -1262,3 +1262,8 @@ def to_jaden_case(string):
 # Complementary DNA
 def DNA_strand(dna):
     return dna.translate(dna.maketrans('ATCG', 'TAGC'))
+
+# 175
+# Credit Card Mask
+def maskify(cc):
+    return f"{len(cc[:-4]) * '#'}{cc[-4:]}"
