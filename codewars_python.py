@@ -1262,3 +1262,13 @@ def to_jaden_case(string):
 # Complementary DNA
 def DNA_strand(dna):
     return dna.translate(dna.maketrans('ATCG', 'TAGC'))
+
+# 175
+# Credit Card Mask
+def maskify(cc):
+    return f"{len(cc[:-4]) * '#'}{cc[-4:]}"
+
+# 176
+# Sum of two lowest positive integers
+def sum_two_smallest_numbers(numbers):
+    return sorted(numbers)[0] + sorted(numbers)[1]
