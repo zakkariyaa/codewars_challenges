@@ -1308,3 +1308,8 @@ def validate_pin(pin):
 # Binary Addition
 def add_binary(a,b):
     return bin(a + b)[2:]
+
+# 183
+# String ends with?
+def solution(string, ending):
+    return string.endswith(ending)
