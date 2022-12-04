@@ -1560,3 +1560,12 @@ function nbYear(p0, percent, aug, p) {
     }
   }
 }
+
+// 161
+// Find the stray number
+function stray(numbers) {
+  const sorted = numbers.sort();
+  if (sorted[0] !== sorted[1]) return sorted[0];
+
+  return sorted[sorted.length - 1];
+}
