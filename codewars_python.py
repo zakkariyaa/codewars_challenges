@@ -1313,3 +1313,17 @@ def add_binary(a,b):
 # String ends with?
 def solution(string, ending):
     return string.endswith(ending)
+
+# 184
+# Sum of odd numbers
+def row_sum_odd_numbers(n):
+    current_row = (n * n) - (n - 1)
+    prev_row = ((n - 1) * (n - 1)) - (n - 2)
+    end_loop = (current_row - prev_row) + current_row
+
+    result = 0
+    for i in range(current_row, end_loop + 1):
+        if i % 2 != 0:
+            result += i
+
+    return result
