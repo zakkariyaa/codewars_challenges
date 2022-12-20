@@ -1569,3 +1569,23 @@ function stray(numbers) {
 
   return sorted[sorted.length - 1];
 }
+
+// 162
+// Money, Money, Money
+function calculateYears(principal, interest, tax, desired) {
+  if (principal === desired) {
+    return 0;
+  }
+
+  let newPrincipal = principal;
+
+  for (let i = 0; i <= desired; i++) {
+    const interestFreeAmount =
+      newPrincipal + newPrincipal * interest - newPrincipal * interest * tax;
+    newPrincipal = interestFreeAmount;
+
+    if (newPrincipal > desired) {
+      return i + 1;
+    }
+  }
+}
