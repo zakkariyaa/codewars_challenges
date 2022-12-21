@@ -1350,3 +1350,14 @@ def number(lines):
 # The highest profit wins!
 def min_max(lst):
     return [min(lst), max(lst)]
+
+# 189
+# Remove the minimum
+def remove_smallest(numbers):
+    new_arr = [num for num in numbers]
+
+    if numbers:
+        new_arr.pop(new_arr.index(min(new_arr)))
+        return new_arr
+    else:
+        return []
