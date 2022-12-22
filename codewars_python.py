@@ -1345,3 +1345,8 @@ def reverse_words(text):
 # Testing 1-2-3
 def number(lines):
     return [f'{i+1}: {lines[i]}' for i in range(len(lines))]
+
+# 188
+# The highest profit wins!
+def min_max(lst):
+    return [min(lst), max(lst)]
