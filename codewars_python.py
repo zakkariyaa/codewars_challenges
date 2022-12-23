@@ -1340,3 +1340,8 @@ def reverse_words(text):
     reversed = [word[::-1] for word in words]
 
     return ' '.join(reversed)
+
+# 187
+# Testing 1-2-3
+def number(lines):
+    return [f'{i+1}: {lines[i]}' for i in range(len(lines))]
