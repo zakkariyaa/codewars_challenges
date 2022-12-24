@@ -1332,3 +1332,11 @@ def row_sum_odd_numbers(n):
 # Odd or Even?
 def odd_or_even(arr):
     return 'even' if sum(arr) % 2 == 0 else 'odd'
+
+# 186
+# Reverse words
+def reverse_words(text):
+    words = text.split(' ')
+    reversed = [word[::-1] for word in words]
+
+    return ' '.join(reversed)
