@@ -1589,3 +1589,9 @@ function calculateYears(principal, interest, tax, desired) {
     }
   }
 }
+
+// 163
+// Sort array by string length
+function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length, 0);
+}
