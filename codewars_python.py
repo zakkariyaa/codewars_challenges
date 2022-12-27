@@ -1361,3 +1361,8 @@ def remove_smallest(numbers):
         return new_arr
     else:
         return []
+
+# 190
+# Anagram Detection
+def is_anagram(test, original):
+    return sorted(test.lower()) == sorted(original.lower())
