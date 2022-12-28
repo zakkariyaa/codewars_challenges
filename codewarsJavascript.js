@@ -1595,3 +1595,10 @@ function calculateYears(principal, interest, tax, desired) {
 function sortByLength(array) {
   return array.sort((a, b) => a.length - b.length, 0);
 }
+
+// 164
+// Find the middle element
+function gimme(triplet) {
+  const sortedArr = [...triplet].sort((a, b) => a - b, 0);
+  return triplet.indexOf(sortedArr[1]);
+}
