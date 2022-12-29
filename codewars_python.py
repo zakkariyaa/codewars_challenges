@@ -1366,3 +1366,9 @@ def remove_smallest(numbers):
 # Anagram Detection
 def is_anagram(test, original):
     return sorted(test.lower()) == sorted(original.lower())
+
+# 191
+# Find the stray number
+def stray(arr):
+    new_arr = sorted(arr)
+    return new_arr[-1] if new_arr[0] == new_arr[1] else new_arr[0]
