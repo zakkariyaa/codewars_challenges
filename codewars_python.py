@@ -1372,3 +1372,11 @@ def is_anagram(test, original):
 def stray(arr):
     new_arr = sorted(arr)
     return new_arr[-1] if new_arr[0] == new_arr[1] else new_arr[0]
+
+# 192
+# Number of People in the Bus
+def number(bus_stops):
+    in_people = sum([arr[0] for arr in bus_stops])
+    out_people = sum([arr[1] for arr in bus_stops])
+
+    return in_people - out_people
