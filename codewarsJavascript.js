@@ -1602,3 +1602,9 @@ function gimme(triplet) {
   const sortedArr = [...triplet].sort((a, b) => a - b, 0);
   return triplet.indexOf(sortedArr[1]);
 }
+
+// 165
+// Remove anchor from URL
+function removeUrlAnchor(url) {
+  return url.split('#')[0];
+}
