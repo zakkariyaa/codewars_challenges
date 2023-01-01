@@ -1608,3 +1608,9 @@ function gimme(triplet) {
 function removeUrlAnchor(url) {
   return url.split('#')[0];
 }
+
+// 166
+// Small enough? - Beginner
+function smallEnough(a, limit) {
+  return a.every((num) => num <= limit);
+}
