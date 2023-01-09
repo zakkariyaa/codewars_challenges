@@ -1614,3 +1614,26 @@ function removeUrlAnchor(url) {
 function smallEnough(a, limit) {
   return a.every((num) => num <= limit);
 }
+
+// 167
+// Sum of the first nth term of Series
+function SeriesSum(n) {
+  if (n === 0) {
+    return '0.00';
+  }
+
+  if (n === 1) {
+    return '1.00';
+  }
+
+  let count = 4;
+  let sum = 1;
+
+  for (let i = 0; i < n - 1; i++) {
+    sum += 1 / count;
+    console.log(1 / count);
+    count += 3;
+  }
+
+  return sum.toFixed(2);
+}
