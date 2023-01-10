@@ -1391,5 +1391,4 @@ def divisors(n):
 # Count the Digit
 def nb_dig(n, d):
     k = [i ** 2 for i in range(n + 1)]
-
     return sum(str(num).count(str(d)) for num in k if str(d) in str(num))
