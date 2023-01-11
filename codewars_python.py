@@ -1380,3 +1380,9 @@ def number(bus_stops):
     out_people = sum([arr[1] for arr in bus_stops])
 
     return in_people - out_people
+
+
+# 193
+# Count the divisors of a number
+def divisors(n):
+    return len([i + 1 for i in range(n) if n % (i + 1) == 0])

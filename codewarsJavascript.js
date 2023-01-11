@@ -1631,7 +1631,6 @@ function SeriesSum(n) {
 
   for (let i = 0; i < n - 1; i++) {
     sum += 1 / count;
-    console.log(1 / count);
     count += 3;
   }
 
