@@ -1392,3 +1392,9 @@ def divisors(n):
 def nb_dig(n, d):
     k = [i ** 2 for i in range(n + 1)]
     return sum(str(num).count(str(d)) for num in k if str(d) in str(num))
+
+# 195
+# Find the middle element
+def gimme(input_array):
+    sorted_arr = sorted(input_array)
+    return input_array.index(sorted_arr[1])
