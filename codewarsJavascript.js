@@ -1653,3 +1653,12 @@ function reverseLetter(str) {
     .reverse()
     .join('');
 }
+
+// 170
+// Summing a number's digits
+function sumDigits(number) {
+  const nums = String(Math.abs(number))
+    .split('')
+    .map((num) => Number(num));
+  return nums.reduce((a, b) => a + b, 0);
+}
