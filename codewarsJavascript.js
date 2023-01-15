@@ -1642,14 +1642,3 @@ function SeriesSum(n) {
 function solution(nums) {
   return nums && nums.length >= 1 ? nums.sort((a, b) => a - b) : [];
 }
-
-// 169
-// Simple Fun #176: Reverse Letter
-function reverseLetter(str) {
-  const alpha = 'abcdefghijklmnopqrstuvwxyz';
-  return str
-    .split('')
-    .filter((char) => alpha.split('').includes(char))
-    .reverse()
-    .join('');
-}
