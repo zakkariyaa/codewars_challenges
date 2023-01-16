@@ -1636,3 +1636,9 @@ function SeriesSum(n) {
 
   return sum.toFixed(2);
 }
+
+// 168
+// Sort Numbers
+function solution(nums) {
+  return nums && nums.length >= 1 ? nums.sort((a, b) => a - b) : [];
+}
