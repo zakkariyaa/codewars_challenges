@@ -1398,3 +1398,11 @@ def nb_dig(n, d):
 def gimme(input_array):
     sorted_arr = sorted(input_array)
     return input_array.index(sorted_arr[1])
+
+# 196
+# Sum of a sequence
+def sequence_sum(begin_number, end_number, step):
+    if begin_number > end_number:
+        return 0
+
+    return sum(i for i in range(begin_number, end_number + 1, step))
