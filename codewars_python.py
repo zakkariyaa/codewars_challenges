@@ -1406,3 +1406,8 @@ def sequence_sum(begin_number, end_number, step):
         return 0
 
     return sum(i for i in range(begin_number, end_number + 1, step))
+
+# 197
+# Two Oldest Ages
+def two_oldest_ages(ages):
+    return [sorted(ages)[-2], sorted(ages)[-1]]
