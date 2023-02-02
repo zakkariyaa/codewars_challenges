@@ -1662,3 +1662,13 @@ function sumDigits(number) {
     .map((num) => Number(num));
   return nums.reduce((a, b) => a + b, 0);
 }
+
+// 171
+// Form The Minimum
+function minValue(values) {
+  return Number(
+    Array.from(new Set(values))
+      .sort((a, b) => a - b, 0)
+      .join('')
+  );
+}
