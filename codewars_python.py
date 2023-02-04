@@ -1411,3 +1411,8 @@ def sequence_sum(begin_number, end_number, step):
 # Two Oldest Ages
 def two_oldest_ages(ages):
     return [sorted(ages)[-2], sorted(ages)[-1]]
+
+# 198
+# Find the capitals
+def capitals(word):
+    return [i for i in range(len(word)) if word[i] == word[i].upper()]
