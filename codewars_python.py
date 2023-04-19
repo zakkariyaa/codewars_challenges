@@ -1416,3 +1416,18 @@ def two_oldest_ages(ages):
 # Find the capitals
 def capitals(word):
     return [i for i in range(len(word)) if word[i] == word[i].upper()]
+
+
+# 199
+# How many are smaller than me?
+def smaller(arr):
+    new_arr = []
+
+    for i in range(len(arr)):
+        count = 0
+        for k in arr[i + 1:]:
+            count += 1 if arr[i] > k else 0
+
+        new_arr.append(count)
+
+    return new_arr
