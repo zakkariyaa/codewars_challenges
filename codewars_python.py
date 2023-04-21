@@ -1431,3 +1431,9 @@ def smaller(arr):
         new_arr.append(count)
 
     return new_arr
+
+# 200
+# Duplicate Encoder
+def duplicate_encode(word):
+    chars = word.lower()
+    return ''.join(['(' if chars.count(char) == 1 else ')' for char in chars])
