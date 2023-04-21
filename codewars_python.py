@@ -1437,3 +1437,15 @@ def smaller(arr):
 def duplicate_encode(word):
     chars = word.lower()
     return ''.join(['(' if chars.count(char) == 1 else ')' for char in chars])
+
+
+# 201
+# Persistent Bugger.
+def persistence(n):
+    if len(str(n)) == 1:
+        return 0
+
+    multiples = 1
+    for num in str(n):
+        multiples *= int(num)
+    return 1 + persistence(multiples)
