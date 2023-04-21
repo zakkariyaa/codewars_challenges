@@ -1449,3 +1449,17 @@ def persistence(n):
     for num in str(n):
         multiples *= int(num)
     return 1 + persistence(multiples)
+
+# 202
+# Tribonacci Sequence
+def tribonacci(signature, n):
+    if n == 0:
+        return []
+
+    trib_sequence = signature[:]
+
+    while len(trib_sequence) < n:
+        next_trib = sum(trib_sequence[-3:])
+        trib_sequence.append(next_trib)
+
+    return trib_sequence[:n]
